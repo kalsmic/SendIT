@@ -9,6 +9,9 @@
 .input-control
 {
   border:none;
-  border-bottom: 1px solid #c3c3bd;
+  border-bottom: 1px solid #888875;
   padding-top:1.2em;
+  border: none;
+  border-bottom: 1px solid #888875;
+  background: transparent;
 }

@@ -19,15 +19,16 @@
 }
 
 .skin {
-    background: #f1f1f1;
+    background: #e5e4e8;
     box-shadow: 0 1px 0 rgba(12,13,14,0.1),0 1px 6px rgba(59,64,69,0.1);
     z-index: 9999;
 }
+
 .pull-right {
-    float: right !important;
+    float: right;
 }
 .pull-left {
-    float: left !important;
+    float: left;
 }
 
 
