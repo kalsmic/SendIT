@@ -1,0 +1,39 @@
+@import '__colors.css';
+@import '__header.css';
+@import '__buttons.css';
+@import '__grid.css';
+@import '__animations.css';
+@import '__form.css';
+
+
+.body {
+    padding: 0;
+}
+
+.container {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.skin {
+    background: #f1f1f1;
+    box-shadow: 0 1px 0 rgba(12,13,14,0.1),0 1px 6px rgba(59,64,69,0.1);
+    z-index: 9999;
+}
+.pull-right {
+    float: right !important;
+}
+.pull-left {
+    float: left !important;
+}
+
+
+
+footer {
+  bottom:0;
+  margin-top: 100px;
+
+}

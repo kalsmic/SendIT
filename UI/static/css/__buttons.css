@@ -1,0 +1,51 @@
+.btn {
+	cursor:pointer;
+	padding: .6em .6em .3em .3em;
+	margin: 12px 2px;
+	font-size: 12px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0;
+	border-radius: .25em;
+}
+
+.btn-green {
+  color: #e4f6d3;
+  background: #63a822;
+  border: 1px solid #59971f;
+}
+.btn-red {
+  color: white;
+  background: #db3535;
+  border: 1px solid #d62626;
+}
+
+.btn-blue {
+    color: white;
+    background: #2191ed;
+    border: 1px solid #1387e7;
+}
+
+.btn-plum {
+  background: #ca6eff;;
+}
+.btn-orange {
+  background: #ff8330;;
+}
+.btn:focus {
+  outline: none;
+}
+
+.btn-medium {
+  height: 36px;
+  line-height: 32px;
+}
+
+.btn-small {
+  font-size:13px;
+  padding:5px 20px;
+}
+
+.btn-block {
+	display: block;
+}

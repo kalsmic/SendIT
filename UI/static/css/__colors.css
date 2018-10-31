@@ -1,0 +1,38 @@
+.bg-red {
+  background: #db3535;
+}
+.text-red {
+  color: #db3535;
+}
+.bg-green {
+  background: #63a822;
+}
+
+.text-green {
+  color: #63a822;
+}
+.bg-orange {
+  background: #ff8330;
+}
+.text-orange {
+  color: #ff8330;
+}
+.bg-blue {
+  background: #2191ed;
+}
+.text-blue {
+  color: #2191ed;
+}
+
+.bg-plum {
+  background: #ca6eff;
+}
+.text-plum {
+  color: #ca6eff;;
+}
+.bg-white {
+  background: #ffffff;
+}
+.text-white {
+  color: #ffffff;
+}

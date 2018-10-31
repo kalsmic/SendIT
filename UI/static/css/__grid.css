@@ -1,0 +1,134 @@
+* {box-sizing: border-box;}
+/* For desktop: */
+.col-1 {
+  width: 8.33%;
+  float:left;
+}
+.col-2 {
+  width: 16.66%;
+  float:left;
+}
+.col-3 {
+  width: 25%;
+  float:left;
+}
+.col-4 {
+  width: 33.33%;
+  float:left;
+
+}
+.col-5 {
+  width: 41.66%;
+  float:left;
+
+}
+.col-6 {
+  width: 50%;
+  float:left;
+
+}
+.col-7 {
+  width: 58.33%;
+  float:left;
+
+}
+.col-8 {
+  width: 66.66%;
+  float:left;
+
+}
+.col-9 {
+  width: 75%;
+  float:left;
+
+}
+.col-10 {
+  width: 83.33%;
+  float:left;
+
+}
+.col-11 {
+  width: 91.66%;
+  float:left;
+
+}
+.col-12 {
+  width: 100%;
+  float:left;
+
+}
+
+.full-height {
+    height: 920px;
+}
+/* clear floats  */
+.clearfix {
+    clear: both;
+}
+/* medium devices */
+@media all (min-width: 768px) {
+    .wrapper {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .form-signup {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+/* small devices */
+@media all and (min-width: 480px) and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+      width: 100%;
+  }
+
+    .wrapper {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .menu > li {
+        padding-left: 28px;
+    }
+    .form-signup {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .logo, .mobi-hide {
+        display: none;
+    }
+    .menubar-fixed-top {
+        width: 98%;
+    }
+    .menubar .menu > li > a {
+        padding-top: 11px;
+        padding-bottom: 4px;
+    }
+}
+/* Extra small screens */
+@media all and (max-width: 480px) {
+
+    [class*="col-"] {
+        width: 100%;
+    }
+
+    .wrapper {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .menu > li {
+        padding-left: 11px;
+    }
+    .form-signup {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .menubar-fixed-top {
+        width: 98%;
+    }
+    .menubar .menu > li > a {
+        padding-top: 11px;
+        padding-bottom: 4px;
+    }
+
+ }

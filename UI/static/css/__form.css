@@ -1,0 +1,14 @@
+.form-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.input-control
+{
+  border:none;
+  border-bottom: 1px solid #c3c3bd;
+  padding-top:1.2em;
+}
