@@ -6,10 +6,10 @@
 .menubar a {
   float: left;
   text-align: center;
-  padding: 14px 16px;
+  padding: 8px 16px;
   text-decoration: none;
   font-size: 17px;
-  line-height: 25px;
+  line-height: 20px;
   border-radius: 4px;
 }
 .menubar a.logo  {
@@ -49,7 +49,7 @@ a:hover {
 .menubar .login-container  button:hover {
   background-color: lightblue;
 }
-/* mobile devices */
+
 @media screen and (max-width: 500px) {
   .menubar .login-container  {
     float: none;
@@ -62,12 +62,22 @@ a:hover {
     display: block;
     text-align: left;
   }
+  .menubar a {
+    width:230px;
+    margin:auto;
+  }
+  .menubar .login-container button {
+    width:80%;
+    margin: auto;
+
+
+  }
 
   .menubar input[type=password],
   .menubar input[type=text] {
     display: block;
     float:left;
-    width:80%;
-    padding-bottom:.8em;
+    width:100%;
+    margin-bottom:.2em;
   }
 }

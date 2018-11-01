@@ -1,0 +1,36 @@
+.slide-container {
+  display: flex;
+  justify-content: flex-start;
+   align-items: flex-start;
+   flex-direction: column;
+}
+.slide {
+  display: none;
+  padding: 80px;
+  text-align: center;
+  /* box-shadow: 0 4px 8px 0 rgb(0,0,0,0.2); */
+  transition: 0.3s;
+
+}
+.slide img{
+  float: left;
+  max-width: 7rem;
+}
+.slide-text {
+  padding: 2px 16px;
+  display: block;
+  font-size: 2em;
+  /* align-self:center; */
+  /* align-content: flex-start; */
+}
+
+
+}
+q {
+  float:left;
+  font-style: italic;
+  justify-content: flex-end;
+  padding-left: 2em;
+
+
+}
