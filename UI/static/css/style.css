@@ -1,39 +1,29 @@
+@import '_grid.css';
+@import '_form.css';
 @import '__colors.css';
-@import '__header.css';
 @import '__buttons.css';
-@import '__grid.css';
 @import '__animations.css';
-@import '__form.css';
 
-
-.body {
-    padding: 0;
-}
-
-.container {
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-top: 20px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.skin {
-    background: #f1f1f1;
-    box-shadow: 0 1px 0 rgba(12,13,14,0.1),0 1px 6px rgba(59,64,69,0.1);
-    z-index: 9999;
-}
 .pull-right {
-    float: right !important;
+    float: right;
 }
 .pull-left {
-    float: left !important;
+    float: left;
 }
 
-
-
-footer {
-  bottom:0;
-  margin-top: 100px;
+.dash {
+  display:flex;
+  justify-content: center;
 
 }
+ .dash-item {
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+     transition: 0.3s;
+     width: 40;
+     text-align:center;
+     padding-top:.2em;
+ }
+
+ .dash-item:hover {
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+ }

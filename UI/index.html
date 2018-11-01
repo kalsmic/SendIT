@@ -1,44 +1,46 @@
 <!DOCTYPE html>
-<html lang='en-US'>
+<html>
 <head>
   <meta charset="utf-8">
   <meta name='viewport' content="width=device-width, initial-scale=1.0">
-  <title>Send IT</title>
-    <link href="./static/css/style.css" rel="Stylesheet" type="text/css">
-
+  <title>login | Register </title>
+  <link href="./static/css/style.css" type="text/css" rel="Stylesheet">
 </head>
-<div class="wrapper">
-  <header class="container" >
-    <div class='menubar'>
-      <div class="pull-left togo-hide">
-        <span class="menu text-center">
-          <a href='index.html' class="text-white bg-blue">SendIT LOGO</a>
-        </span>
-      </div>
-      <div class="pull-right">
-        <div class="login-container">
-          <form action="/action_page.php">
-            <input type="text" placeholder="USERNAME" name="username"
-            class='input-control' required>
-            <input type="password" placeholder="PASSWORD" name="password"
-            class="input-control" required>
-            <button type="submit" class='btn-blue shake'>LOGIN</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </header>
-  <main class="container">
-    <div class="wrapper">
-      <aside class="col-6">
-        <h1>Smart people great solutions</h1>
-           <p>A courier service that helps deliver parcels to your desired destination.</p>
-      </aside>
-      <section class="col-4 pull-right shake">
+<body class="bg-gray">
+  <div class="wrapper">
+  <header>
+    <h1 class="logo">SendIT</h1>
+    <input type="checkbox" class="nav-toggle" id="nav-toggle">
+    <nav>
+      <ul>
+        <form  class="login-container" action="profile.html">
+        <input type="text" placeholder="USERNAME" name="username"
+         class='input-control' required>
+        <input type="password" class='input-control' placeholder="PASSWORD" name="password"
+        class="input-control" required>
+        <button type="submit" class='btn-blue btn-block shake'>LOGIN</button>
+    </form>
+  </ul>
+    </nav>
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+    </label>
 
+    </div>
+
+  </header>
+
+  <main class="page-content">
+
+    <aside class="slide-container">
+      <h2>Smart people great solutions</h2>
+      <q >we are commited to meeting your need</q>
+    </aside>
+
+    <section class="register-container vertical-form">
         <fieldset>
           <legend>  <h2 class="text-blue">Create an account Here</h2></legend>
-        <form class="form-container">
+        <form action='profile.html'>
           <input type='text' name='username' placeholder="USERNAME" required
            class='input-control'>
           <input type='email' name='email' placeholder="EMAIL ADDRESS" required
@@ -49,19 +51,15 @@
           <input type="password" id='confirm_password' name='confirm_password'
           placeholder="REPEAT PASSWORD" required class='input-control'>
           <button type="submit" name='btn_signup'
-          class='btn btn-blue btn-block text-white floating'>Sign Up</button>
+          class='btn btn-blue btn-medium btn-block text-white floating'>Sign Up</button>
 
         </form>
       </fieldset>
-      </section>
-    </div>
+    </section>
   </main>
-  <div class="clearfix"></div>
-
-  <footer class="skin col-12">
-    <p>SendIT &nbsp;@copyright 2018</p>
+  <footer>
+      <p>SendIT &nbsp; &copy;2018</p>
   </footer>
 </div>
 </body>
-<script src='./static/js/form_validation.js'></script>
 </html>

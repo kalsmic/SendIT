@@ -1,5 +1,5 @@
 .bg-red {
-  background: #db3535;
+  background: #d18888;
 }
 .text-red {
   color: #db3535;
@@ -7,7 +7,12 @@
 .bg-green {
   background: #63a822;
 }
-
+.bg-gray {
+background: #f2f2f2;
+}
+.bg-blueish-purple {
+background: #4c5e9e;
+}
 .text-green {
   color: #63a822;
 }
@@ -35,4 +40,7 @@
 }
 .text-white {
   color: #ffffff;
+}
+.text-black {
+  color: black;
 }
