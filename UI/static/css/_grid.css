@@ -1,15 +1,12 @@
-:root {
-  --background: lightgray;
 
-}
 /* reset box sizing */
 *, *::before, *::after {
   box-sizing: border-box;
 }
-.body {
+body {
   margin: 0;
-  background: #222;
   font-weight: 400;
+  background: var(--page_background);
 }
 
 .wrapper {
@@ -238,6 +235,7 @@ footer {
     grid-template-columns: repeat(12,1fr);
     grid-gap: 1.25rem;
   }
+  /* begin grid for index page */
   .slide-container {
     grid-column: 2 / span 5;
     grid-row: auto;
@@ -247,6 +245,7 @@ footer {
       grid-row: auto;
       margin-right: 1rem;
   }
+  /* end grid for index page */
 
   /* main styles end here */
 
