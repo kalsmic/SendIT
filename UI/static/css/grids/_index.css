@@ -22,6 +22,31 @@ header {
   top: 0;
 }
 
+/* reset box sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-weight: 400;
+  background: var(--page_background);
+}
+
+.wrapper {
+  padding-right: 1.25rem;
+}
+/* navigation styles start here */
+
+header {
+  background: var(--background);
+  text-align: center;
+  z-index: 999;
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+
+
 .logo  {
   margin: auto;
 }
@@ -44,7 +69,7 @@ header {
   display: block;
   background: white;
   height: 2px;
-  width: 2rem;
+  width: 2em;
   border-radius: 2px;
   position: relative;
 }
@@ -80,14 +105,13 @@ nav ul {
 }
 
 nav li {
-  margin-bottom: 1rem;
-  margin-left: 1rem;
+  margin-bottom: 1em;
+  margin-left: 1em;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  display: block;
   font-size: 1.2rem;
   text-transform: uppercase;
   opacity: 0;
@@ -95,8 +119,7 @@ nav a {
 }
 
 nav a:hover {
-  color: var(--black);
-  background: #ddd;
+  color: red;
 
 }
 
@@ -120,14 +143,24 @@ main {
   flex-flow: column wrap;
   width:100%;
   left:0;
-  margin-top:3rem;
-  margin-left: .5rem;
+  margin-top:3em;
+  margin-left: .5em;
   padding-bottom: 1rem;
 
 }
+/* main  styles end here */
 
+/* footer styles start here */
+footer {
+  padding-left: 1rem;
+  position: absolute;
+  width: 100%;
+  background: var(--background);
+}
 
-@media screen and (min-width: 50rem) {
+/* footer styles end here */
+
+@media screen and (min-width: 800px) {
   .wrapper  {
     display: grid;
     grid-template-columns:repeat(12,[col-start] 1fr);
@@ -155,8 +188,9 @@ main {
     grid-column: col-start 1 / 13;
     grid-row: 1;
     display: grid;
-    padding-bottom:1em;
+    padding-bottom:1rem;
     grid-template-columns: repeat(9,1fr);
+
 
   }
 
@@ -237,5 +271,18 @@ main {
   }
   /* end grid for index page */
 
+  /* main styles end here */
+
+  /* footer styles start here */
+  footer {
+    position: fixed;
+    bottom:0;
+    left:0;
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+
   }
+  /* footer styles end here */
+
+}
 

@@ -9,24 +9,37 @@
 
 </head>
 <body>
-
+  <div class="wrapper">
+  <header>
+    <a class='btn bg-blue text-white' href="profile.html">
+      S&#8455;&#8469;&#8517;<i>IT</i>
+  </a>
+  <a class="btn bg-black text-white" href="contact.html">CONTACT US</a>
+    <input type="checkbox" class="nav-toggle" id="nav-toggle">
     <nav>
-  <a class="active" href="#home">S&#8455;&#8469;&#8517;<i>IT</i></a>
-  <a href="#contact">Contact US</a>
-  <div class="login-container">
-    <form action="/profile.html" method="post">
-      <input type="text" placeholder="Username" name="username">
-      <input type="text" placeholder="Password" name="psw">
-      <button type="submit">Login</button>
+      <ul>
+        <form  class="login-container" action="profile.html">
+        <input type="text" placeholder="USERNAME" name="username"
+         class='input-control' required>
+        <input type="password" class='input-control' placeholder="PASSWORD" name="password"
+        class="input-control" required>
+        <button type="submit" class='btn bg-blue btn-block shake'>LOGIN</button>
     </form>
-  </div>
-</nav>
+  </ul>
+    </nav>
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+    </label>
+
+    </div>
+
+  </header>
+
   <main class="page-content">
 
-    <aside class="slide-container fade-in">
+    <aside class="slide-container">
       <h2>Smart people great solutions</h2>
       <q >we are commited to meeting your need</q>
-
     </aside>
 
     <section class="register-container vertical-form">
@@ -49,9 +62,13 @@
       </fieldset>
     </section>
   </main>
-  <footer class="bg-gray">
-      <p>SendIT &nbsp; &copy;2018</p>
-  </footer>
+</div>
 
+  <footer class="bg-black">
+    <a class='btn bg-blue text-white' href="profile.html">
+      S&#8455;&#8469;&#8517;<i>IT</i>&nbsp;&nbsp;&copy;2018
+  </a>
+  </footer>
 </body>
 </html>
+
