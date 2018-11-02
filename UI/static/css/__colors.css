@@ -7,6 +7,7 @@
   --orange: #D11250;
   --blue: #006899;
   --black: #222222;
+  --beige:#f5f5dc;
 
   --light_red: #D43F3F;
   --light_green: #6A9A1F;
@@ -17,6 +18,7 @@
   --page_background :#FFFFFF;
 }
 
+/* .text-blue { color: var(--blue);} */
 
 /* Backgrounds  */
 .bg-white {  background: var(--white);}
@@ -26,6 +28,7 @@
 .bg-orange {  background: var(--orange); }
 .bg-blue { background: var(--blue); }
 .bg-black { background: var(--black); }
+.bg-biege { background: var(--biege); }
 
 
 
@@ -35,3 +38,18 @@
 .bg-lorange { background: var(--light_orange); }
 .bg-lblue { background: var(--light_blue); }
 .bg-lblack { background: var(--light_black); }
+
+/* text colors */
+.text-white {  color: var(--white);}
+.text-gray { color: var(--gray)  }
+.text-red { color: var(--red); }
+.text-green { color: var(--green); }
+.text-orange {  color: var(--orange); }
+.text-blue { color: var(--blue); }
+.text-black { color: var(--black); }
+
+.text-lred { color: var(--light_red);}
+.text-lgreen { color: var(--light_green); }
+.text-lorange { color: var(--light_orange); }
+.text-lblue { color: var(--light_blue); }
+.text-lblack { color: var(--light_black); }

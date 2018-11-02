@@ -1,10 +1,14 @@
 @import '_form.css';
 @import '__colors.css';
+@import '_nav.css';
 @import '_grid.css';
 @import '__buttons.css';
-@import '__animations.css';
+@import '_animations.css';
 @import '_badges.css';
-
+@import '_nav.css';
+html { font-size: 62.5%; }
+body { font-size: 1.4rem; }
+h1   { font-size: 2.4rem; }
 
 
 .pull-right {
@@ -16,16 +20,3 @@
 .pad-3 {
   padding: 0.13em;
 }
-
-.logo {
-  background-color:var(--blue);
-  color:#fff;
-  display:inline-block;
-  padding-left:8px;
-  padding-right:8px;
-  text-align:center;
-  border-radius:4px;
-}
-/* .logo_border{border:1px solid #ccc;} */
-.logo_border {background: linear-gradient(-70deg, #fa7c30 30%, rgba(0, 0, 0, 0) 30%);}
-.logo-border-white{border-color:#fff;}
