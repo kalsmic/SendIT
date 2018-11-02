@@ -15,8 +15,16 @@
 .dash-items > div  span{
   left:2em;
 }
+.profile-page-content {
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  background-color: red;
+
+
+}
 
 @media screen and (min-width: 800px) {
+
   .dashboard {
     grid-column: 1 / span 12;
     grid-row: 2;

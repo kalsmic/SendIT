@@ -1,54 +1,48 @@
 .btn {
 	cursor:pointer;
-	color:white;
-	padding:15px 32px;
-	margin: 4px 2px;
-	font-size: 16px;
+	padding:8px 16px;
 	display: inline-block;
 	text-decoration: none;
+	overflow: hidden;
 	text-align: center;
 	border:none;
 	text-transform: uppercase;
-	border-radius: .25em;
+	white-space: nowrap;
 }
 
-.btn-green {
-  color: #e4f6d3;
-  background: #63a822;
-  border: 1px solid #59971f;
+.disabled,
+.btn:disabled,
+.button:disabled {
+	cursor:not-allowed;
+	opacity:0.3;
 }
-.btn-red {
-  color: white;
-  background: #db3535;
-  border: 1px solid #d62626;
-}
-
-.btn-blue {
-    color: white;
-    background: #2191ed;
-    border: 1px solid #1387e7;
+.disabled *,
+:disabled *{
+	pointer-events:none
 }
 
-.btn-plum {
-  background: #ca6eff;;
-}
-.btn-orange {
-  background: #ff8330;;
+.btn.disabled:hover,
+.btn:disabled:hover{
+box-shadow:none
 }
 .btn:focus {
   outline: none;
 }
-
-.btn-medium {
-  height: 36px;
-  line-height: 13px;
+.btn-tiny{
+	font-size:.1rem;
 }
-
-.btn-small {
-  font-size:13px;
-  padding:5px 20px;
+.btn-small{
+	font-size:1.2rem;
 }
-
+.btn-medium{
+	font-size:1.5rem;
+}
+.btn-large{
+	font-size:1.8rem;
+}
+.btn-xlarge{
+	font-size:2.4rem;
+}
 .btn-block {
 	display: block;
 	width:100%;

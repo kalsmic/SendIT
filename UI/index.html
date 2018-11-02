@@ -5,36 +5,28 @@
   <meta name='viewport' content="width=device-width, initial-scale=1.0">
   <title>login | Register </title>
   <link href="./static/css/style.css" type="text/css" rel="Stylesheet">
+  <link href="./static/css/grids/_index.css" type="text/css" rel="Stylesheet">
+
 </head>
 <body>
-  <div class="wrapper">
-  <header>
-    <h1 class="logo">SendIT</h1>
-    <input type="checkbox" class="nav-toggle" id="nav-toggle">
+
     <nav>
-      <ul>
-        <form  class="login-container" action="profile.html">
-        <input type="text" placeholder="USERNAME" name="username"
-         class='input-control' required>
-        <input type="password" class='input-control' placeholder="PASSWORD" name="password"
-        class="input-control" required>
-        <button type="submit" class='btn-blue btn-block shake'>LOGIN</button>
+  <a class="active" href="#home">S&#8455;&#8469;&#8517;<i>IT</i></a>
+  <a href="#contact">Contact US</a>
+  <div class="login-container">
+    <form action="/profile.html" method="post">
+      <input type="text" placeholder="Username" name="username">
+      <input type="text" placeholder="Password" name="psw">
+      <button type="submit">Login</button>
     </form>
-  </ul>
-    </nav>
-    <label for="nav-toggle" class="nav-toggle-label">
-      <span></span>
-    </label>
-
-    </div>
-
-  </header>
-
+  </div>
+</nav>
   <main class="page-content">
 
-    <aside class="slide-container">
+    <aside class="slide-container fade-in">
       <h2>Smart people great solutions</h2>
       <q >we are commited to meeting your need</q>
+
     </aside>
 
     <section class="register-container vertical-form">
@@ -51,15 +43,15 @@
           <input type="password" id='confirm_password' name='confirm_password'
           placeholder="REPEAT PASSWORD" required class='input-control'>
           <button type="submit" name='btn_signup'
-          class='btn btn-blue btn-medium btn-block text-white floating'>Sign Up</button>
+          class='btn bg-blue btn-medium btn-block text-white floating'>Sign Up</button>
 
         </form>
       </fieldset>
     </section>
   </main>
-  <footer>
+  <footer class="bg-gray">
       <p>SendIT &nbsp; &copy;2018</p>
   </footer>
-</div>
+
 </body>
 </html>

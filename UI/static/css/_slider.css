@@ -19,7 +19,7 @@
 .slide-text {
   padding: 2px 16px;
   display: block;
-  font-size: 2em;
+  font-size: .2rem;
   /* align-self:center; */
   /* align-content: flex-start; */
 }
@@ -30,7 +30,7 @@ q {
   float:left;
   font-style: italic;
   justify-content: flex-end;
-  padding-left: 2em;
+  padding-left: 3.2rem;
 
 
 }
