@@ -3,61 +3,157 @@
 <head>
   <meta charset="utf-8">
   <meta name='viewport' content="width=device-width, initial-scale=1.0">
-  <title>login | Register </title>
-  <link href="./static/css/style.css" type="text/css" rel="Stylesheet">
-  <link href="./static/css/grids/__grid_profile.css" type="text/css" rel="Stylesheet">
+  <title>PROFILE</title>
 
+  <link href="./static/css/profile.css" type="text/css" rel="Stylesheet">
 </head>
 <body>
   <div class="wrapper">
-  <header>
 
-    <div class='logo pad-3'>
-      <div class='logo logo_border logo_border_white'>
-      SendIT
-      </div>
-    </div>
-    <input type="checkbox" class="nav-toggle" id="nav-toggle">
-    <nav>
-      <ul>
-        <li><a href="profile.html">PROFILE</a></li>
-        <li><a href="index.html"><i class="fa fa-power-off"></i>logout</a></li>
-      </ul>
-    </nav>
-    <label for="nav-toggle" class="nav-toggle-label">
-      <span></span>
-    </label>
-    </div>
+  <header class="floating">
+
+    <a class='btn bg-blue text-white' href="profile.html">
+      S&#8455;&#8469;&#8517;<i>IT</i>
+  </a>
+  <a class="btn bg-black text-white" href="profile.html">Welcome User</a>
 
   </header>
+  <nav>
+    <ul>
 
-  <main class="profile-page-content">
+      <li><a class="floating btn bg-black text-white" href="view_orders.html fadein">VIEW ORDERS</a></li>
+      <li><a class="floating btn bg-black text-white pull-right" href="place_order.html">Place Order</a></li>
 
-    <aside class="dashboard">
-      <div class="dash-items">
+      <li><a class="floating btn bg-black text-white" href="profile.html ">PROFILE</a></li>
 
-        <div class="bg-lgreen">
-          <span class='badge bg-black'>1</span> Delivered
-        </div>
-        <div class="bg-lblue">
-          <span class='badge bg-black'>3</span> In Transit
-        </div>
-        <div class="bg-lred">
-          <span class='badge bg-black'>5</span> Pending
-        </div>
-        <div class="bg-orange">
-        <span class='badge bg-black'>3</span>Cancelled
-        </div>
+      <li><a class="floating btn bg-lred text-white  pull-right" href="index.html"><i class="fa fa-power-off"></i>logout</a></li>
+    </ul>
+  </nav>
+
+  <aside class="shake dashboard">
+    <div class="dash-items ldash">
+
+      <div class="bg-lgreen">
+        <span class='badge bg-black'>1</span> Delivered
       </div>
-    </aside>
+      <div class="bg-lblue">
+        <span class='badge bg-black'>3</span> In Transit
+      </div>
+    </div>
+    <div class="dash-items rdash">
 
-    <section class="dashboard-tables">
+      <div class="bg-lred">
+        <span class='badge bg-black'>5</span> Pending
+      </div>
+      <div class="bg-orange">
+      <span class='badge bg-black'>3</span>Cancelled
+      </div>
+    </div>
+  </aside>
 
-    </section>
-  </main>
-  <footer>
-      <p>SendIT &nbsp; &copy;2018</p>
+  <main class="view_orders">
+    <table >
+      <thead>
+        <tr>
+           <th scope='col'>SEARCH</th>
+           <th scope='col'>DATE</th>
+           <th scope='col'>TRACKING ID</th>
+           <th scope='col'>DESCRIPTION</th>
+           <th scope='col'>STATUS</th>
+           <th scope='col'></th>
+         </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td scope='row' data-label='SEARCH'>PARCEL ORDER</td>
+        <td data-label='DATE'>
+         <input type="text" id='_date'
+          onkeyup="searchTable('view_orders','_date',1)"
+            placeholder="filter by date">
+        </td>
+        <td data-label='TRACKING ID'>
+          <input type="text" id='_trackID'
+         onkeyup="searchTable('view_orders','_trackID',2)"
+         placeholder="filter by Tracking id">
+       </td>
+       <td data-label='DECRIPTION'> <input type="text" id='_descID'
+            onkeyup="searchTable('view_orders','_descID',3)"
+            placeholder="filter by description">
+        </td>
+        <td data-label='STATUS'><input type="text" id='_statusID'
+         onkeyup="searchTable('view_orders','_statusID',4)"
+         placeholder="filter by status"></td>
+         <td ></td>
+     </tr>
+   </tbody>
+    </table>
+    <table id='view_orders'>
+       <thead>
+         <tr>
+            <th scope='col'>#</th>
+            <th scope='col'>DATE</th>
+            <th scope='col'>TRACKING ID</th>
+            <th scope='col'>DESC</th>
+            <th scope='col'>STATUS</th>
+            <th scope='col'>VIEW</th>
+            <th scope='col'>EDIT</th>
+            <th scope='col'>CANCEL</th>
+           </tr>
+       </thead>
+       <tbody>
+          <tr>
+            <td scope='row' data-label='#'>1</td>
+            <td data-label='DATE'>12/FEB/2018</td>
+            <td data-label='TRACKING ID'>SDT123</td>
+            <td data-label='DECRIPTION'>Academic Documents</td>
+            <td data-label='STATUS' class="text-orange">Pending</td>
+            <td data-label='VIEW'><a href="view_order.html" class=" btn btn-xlarge">view</a></td>
+            <td data-label='EDIT'><a href='edit_order.html' class="bg-btn btn-xlarge">Edit</a></td>
+            <td data-label='CANCEL'><a  class=" btn btn-xlarge text-red">X</a></td>
+          </tr>
+          <tr>
+              <td scope='row' data-label='#'>2</td>
+              <td data-label='DATE'>22/MAR/2018</td>
+              <td data-label='TRACKING ID'>SDT124</td>
+              <td data-label='DESCRIPTION'>laptop</td>
+              <td data-label='STATUS' class="text-green">Delivered</td>
+              <td data-label='VIEW'><a href="view_order.html" class=" btn btn-xlarge">view</a></td>
+              <td data-label='EDIT'><a class=" btn btn-xlarge text-biege">Edit</a></td>
+              <td data-label='CANCEL'><a  class=" btn btn-xlarge text-red">X</a></td>
+            </tr>
+            <tr>
+              <td scope='row' data-label='#'>3</td>
+              <td data-label='DATE'>24/MAR/2018</td>
+              <td data-label='TRACKING ID'>SDT784</td>
+              <td data-label='DESCRIPTION'>FRIDGE</td>
+              <td data-label='STATUS' class="text-red">Cancelled</td>
+              <td data-label='VIEW'><a href="view_order.html" class=" btn btn-xlarge">view</a></td>
+              <td data-label='EDIT'><a  class=" btn btn-xlarge text-biege">Edit</a></td>
+              <td data-label='CANCEL'><a  class=" btn btn-xlarge text-red">X</a></td>
+            </tr>
+            <tr>
+              <td scope='row' data-label='#'>4</td>
+              <td data-label='DATE'>27/MAR/2018</td>
+              <td data-label='TRACKING ID'>SDT783</td>
+              <td data-label='DESCRIPTION'>Bright Box wireless router</td>
+              <td class="text-blue">In Transit</td>
+              <td data-label='VIEW'><a href="view_order.html" class=" btn btn-xlarge">view</a></td>
+              <td data-label='EDIT'><a  class=" btn btn-xlarge text-biege">Edit</a></td>
+              <td data-label='CANCEL'><a  class=" btn btn-xlarge text-red">X</a></td>
+            </tr>
+         </tbody>
+        </table>
+    </main>
+    <article class="events">
+      <h2>Up comming events</h2>
+    </article>
+
+  <footer class="bg-black">
+    <a class='btn bg-blue text-white' href="profile.html">
+      S&#8455;&#8469;&#8517;<i>IT</i>&nbsp;&nbsp;&copy;2018
+  </a>
   </footer>
 </div>
+<script src="./static/js/filter_table.js"></script>
 </body>
 </html>

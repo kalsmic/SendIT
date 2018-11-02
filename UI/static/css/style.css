@@ -1,22 +1,36 @@
 @import '_form.css';
 @import '__colors.css';
-@import '_nav.css';
-@import '_grid.css';
 @import '__buttons.css';
-@import '_animations.css';
+@import 'animations.css';
 @import '_badges.css';
-@import '_nav.css';
+@import '_table.css';
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+}
 html { font-size: 62.5%; }
 body { font-size: 1.4rem; }
 h1   { font-size: 2.4rem; }
 
+* {box-sizing: border-box;}
 
-.pull-right {
-    float: right;
+  .wrapper {
+      /* max-width: 1024px; */
+      margin: 0 auto;
+      font: 1.2em Helvetica, arial, sans-serif;
+  }
+
+  .wrapper > * {
+      border-radius: 5px;
+      padding: 10px;
+  }
+ header {
+   width:100%;
+   background-color: var(--light_black);
+   }
+  nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
 }
-.pull-left {
-    float: left;
-}
-.pad-3 {
-  padding: 0.13em;
-}
+
