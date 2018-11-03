@@ -1,9 +1,9 @@
-@import '_form.css';
-@import '__colors.css';
-@import '__buttons.css';
+@import 'form.css';
+@import 'colors.css';
+@import 'buttons.css';
 @import 'animations.css';
-@import '_badges.css';
-@import '_table.css';
+@import 'badges.css';
+@import 'table.css';
 body {
   font-family: "Open Sans", sans-serif;
   line-height: 1.25;
