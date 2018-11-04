@@ -1,0 +1,140 @@
+@import 'style.css';
+
+.dash-items {
+  max-width: 320px;
+}
+
+.dash-items > div {
+  width:19rem;
+  margin: 0.6rem;
+  text-align: center;
+  line-height: 3.4rem;
+  font-size: 1.86rem;
+
+  color: var(--white);
+}
+.dash-items > div span{
+  float:left;
+}
+.dash-text {
+  text-align: center;
+}
+
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  grid-gap: 20px;
+}
+.wrapper > * {
+  grid-column: col-start / span 12;
+}
+
+@media (min-width: 500px) {
+
+  header {
+    grid-column: col-start / span 12;
+    grid-row: 1;
+
+  }
+
+nav {
+    grid-column: col-start / -1;
+    grid-row: 2;
+  }
+
+  .dashboard {
+    grid-column: col-start / span 1;
+    grid-row: 3;
+    grid-gap: 20px;
+    display: grid;
+    grid-column: repeat(4,1fr);
+  }
+
+  .ldash {
+    grid-column: 1 / span 2;
+    grid-row: 1/2;
+
+  }
+
+  .rdash {
+    grid-column: 3 / span 2;
+    grid-row: 1/2;
+  }
+
+  .view_orders {
+    grid-column: col-start / span 3;
+    grid-row: 4;
+  }
+
+  .events {
+    grid-column: col-start / span 3;
+    grid-row: 5;
+    background: var(--black);
+  }
+
+  footer {
+    grid-column: col-start 4 / span 9;
+    grid-row:6;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
+ @media (min-width: 700px) {
+
+   .wrapper {
+     display: grid;
+     grid-template-columns: repeat(12, [col-start] 1fr);
+     grid-gap: 20px;
+   }
+
+  header {
+    grid-column: col-start / span 12;
+    grid-row: 1;
+  }
+  .dashboard {
+    grid-column: col-start 1  /span 12;
+    grid-row: 3;
+  }
+
+  nav ul {
+    flex-direction: row;
+  }
+
+  .dashboard {
+   display: none;
+   grid-column: 1 /  2;
+   grid-row: 3;
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-row-gap: 0;
+
+  }
+  .ldash {
+    grid-column: 1 / span 1;
+    grid-row: 1;
+
+  }
+  .rdash {
+    grid-column: 1 / span 1;
+    grid-row: 2;
+  }
+
+   .events  {
+     grid-column: col-start 1/ span 1;
+     grid-row: 4/6;
+   }
+  .view_orders {
+   grid-column:col-start 2 /span 12;
+   grid-row:3/ 6;
+ }
+
+  footer {
+    grid-column: col-start / span 12;
+    grid-row:7;
+  }
+
+}

@@ -1,0 +1,49 @@
+.btn {
+	cursor:pointer;
+	padding:8px 16px;
+	display: inline-block;
+	text-decoration: none;
+	overflow: hidden;
+	text-align: center;
+	border:none;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+
+.disabled,
+.btn:disabled,
+.button:disabled {
+  cursor:not-allowed;
+}
+
+.disabled *,
+:disabled *{
+ pointer-events:none
+}
+
+.btn.disabled:hover,
+.btn:disabled:hover{
+box-shadow:none
+}
+.btn:focus {
+  outline: none;
+}
+.btn-tiny{
+	font-size:.1rem;
+}
+.btn-small{
+	font-size:1.2rem;
+}
+.btn-medium{
+	font-size:1.5rem;
+}
+.btn-large{
+	font-size:1.8rem;
+}
+.btn-xlarge{
+	font-size:2.4rem;
+}
+.btn-block {
+	display: block;
+	width:100%;
+}

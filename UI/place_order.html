@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name='viewport' content="width=device-width, initial-scale=1.0">
+  <title>PROFILE</title>
+
+  <link href="./static/css/profile.css" type="text/css" rel="Stylesheet">
+</style>
+
+</head>
+<body>
+  <div class="wrapper">
+
+  <header>
+
+    <a class='btn bg-blue text-white' href="profile.html">
+      S&#8455;&#8469;&#8517;<i>IT</i>
+  </a>
+  <a class="btn bg-black text-white" href="profile.html">Welcome User</a>
+
+  </header>
+  <nav>
+    <ul>
+
+      <li><a class=" btn bg-white text-black floating" href="view_orders.html fadein">VIEW ORDERS</a></li>
+      <li><a id="myBtn" class="btn bg-white text-black floating pull-right" href="place_order.html">Place Order</a></li>
+
+      <li><a class="active btn bg-white text-blue floating" href="profile.html "><u>PROFILE</u></a></li>
+
+      <li><a class=" btn bg-white text-red floating pull-right" href="index.html"><i class="fa fa-power-off"></i>logout</a></li>
+    </ul>
+  </nav>
+
+
+  <aside class="shake dashboard">
+    <div class="dash-items ldash">
+
+      <div class="bg-lgreen">
+        <span class='badge bg-black'><i class='text-lgreen'>1 &#9989;</i> </span> Delivered
+      </div>
+      <div class="bg-lblue">
+        <span class='badge bg-black '>3&nbsp; &#9885;</span>In Transit
+      </div>
+    </div>
+    <div class="dash-items rdash">
+
+      <div class="bg-lred">
+        <span class='badge bg-black'>5 ⚒</span> Pending
+      </div>
+      <div class="bg-orange">
+      <span class='badge bg-black'>3&#9746;</span>Cancelled
+      </div>
+    </div>
+  </aside>
+
+  <main class="view_orders">
+
+    <table >
+       <thead>
+         <tr>
+            <th scope='col'>#</th>
+            <th scope='col'>DATE</th>
+            <th scope='col'>TRACKING ID</th>
+            <th scope='col'>DESC</th>
+            <th scope='col'>STATUS</th>
+            <th scope='col'>VIEW</th>
+            <th scope='col' >EDIT</th>
+            <th scope='col'>CANCEL</th>
+          </tr>
+       </thead>
+       <tbody id='view_orders'>
+          <tr>
+            <td scope='row' data-label='#'>1</td>
+            <td data-label='DATE'>12/02/2018</td>
+            <td data-label='TRACKING ID'>SDT123</td>
+            <td data-label='DECRIPTION'>Academic Documents</td>
+            <td data-label='STATUS' class="text-orange">Pending</td>
+            <td data-label='VIEW'><a href="view_order.html"
+               class=" btn btn-xlarge">&#10161;</a></td>
+            <td data-label='EDIT'><a href='edit_order.html'
+              class="bg-btn btn-xlarge">&#9997;</a></td>
+            <td data-label='CANCEL'><a class=" btn btn-xlarge text-red">
+              &#9876;</a></td>
+          </tr>
+          <tr>
+              <td scope='row' data-label='#'>2</td>
+              <td data-label='DATE'>22/04/2018</td>
+              <td data-label='TRACKING ID'>SDT124</td>
+              <td data-label='DESCRIPTION'>laptop</td>
+              <td data-label='STATUS' class="text-green">Delivered</td>
+              <td data-label='VIEW'><a href="view_order.html"
+                class=" btn btn-xlarge">&#10161;</a></td>
+              <td data-label='EDIT'><a class=" btn btn-xlarge text-biege">&#9997;</a></td>
+              <td data-label='CANCEL'><a
+                class="btn btn-xlarge text-red">&#9876;</a></td>
+            </tr>
+            <tr>
+              <td scope='row' data-label='#'>3</td>
+              <td data-label='DATE'>24/05/2018</td>
+              <td data-label='TRACKING ID'>SDT784</td>
+              <td data-label='DESCRIPTION'>FRIDGE</td>
+              <td data-label='STATUS' class="text-red">Cancelled</td>
+              <td data-label='VIEW'><a href="view_order.html"
+                class=" btn btn-xlarge">&#10161;</a></td>
+              <td data-label='EDIT'><a
+                class=" btn btn-xlarge text-biege">&#9997;</a></td>
+              <td data-label='CANCEL'><a
+                class=" btn btn-xlarge text-red">&#9876;</a></td>
+            </tr>
+            <tr>
+              <td scope='row' data-label='#'>4</td>
+              <td data-label='DATE'>27/06/2018</td>
+              <td data-label='TRACKING ID'>SDT783</td>
+              <td data-label='DESCRIPTION'>Bright Box wireless router</td>
+              <td class="text-blue">In Transit</td>
+              <td data-label='VIEW'><a href="view_order.html" class=" btn btn-xlarge">&#10161;</a></td>
+              <td data-label='EDIT'><a  class=" btn btn-xlarge text-biege">&#9997;</a></td>
+              <td data-label='CANCEL'><a
+                class=" btn btn-xlarge text-red">&#9876;</a></td>
+            </tr>
+         </tbody>
+        </table>
+    </main>
+
+  <footer class="bg-black">
+    <a class='btn bg-blue text-white' href="profile.html">
+      S&#8455;&#8469;&#8517;<i>IT</i>&nbsp;&nbsp;&copy;2018
+  </a>
+  </footer>
+</div>
+</body>
+</html>
