@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name='viewport' content="width=device-width, initial-scale=1.0">
+  <title>PROFILE</title>
+
+  <link href="./static/css/profile.css" type="text/css" rel="Stylesheet">
+</style>
+
+</head>
+<body>
+  <div class="wrapper">
+
+  <header>
+
+    <a class='btn bg-blue text-white' href="profile.html">
+      S&#8455;&#8469;&#8517;<i>IT</i>
+  </a>
+  <a class="btn bg-black text-white" href="profile.html">Welcome User</a>
+
+  </header>
+  <nav>
+    <ul>
+
+      <li><a class=" btn bg-white text-black floating" href="view_orders.html fadein">VIEW ORDERS</a></li>
+      <li><a id="myBtn" class="btn bg-white text-black floating pull-right" href="place_order.html">Place Order</a></li>
+
+      <li><a class="active btn bg-white text-blue floating" href="profile.html "><u>PROFILE</u></a></li>
+
+      <li><a class=" btn bg-white text-red floating pull-right" href="index.html"><i class="fa fa-power-off"></i>logout</a></li>
+    </ul>
+  </nav>
+
+
+
+
+  <main class="view_orders">
+
+    <label class='page_label btn btn-block'>create a parcel Order</label>
+
+       <form enctype="multipart/form-data">
+
+         <section class="location_details">
+
+           <table>
+
+             <thead>
+               <tr>
+                 <th scope="col">ITEM NAME</th>
+                 <th scope="col">PICKUP LOCATION</th>
+                 <th scope="col">DESTINATION</th>
+               </tr>
+             </thead>
+             <tbody>
+             <tr>
+               <td scope='row' data-label='ITEM'><input type="text" name='item'
+                 class="input-control" placeholder="ITEM NAME">
+               </td>
+               <td scope='row' data-label='PICK UP LOCATION'> <input type='text'
+                  name='pick_up_location' placeholder="PICK UP LOCATION"
+                  class="input-control">
+               </td>
+               <td scope='row' data-label='DESTINATION'> <input type='text'
+                  name='destination' placeholder="DESTINATION"
+                 class="input-control">
+               </td>
+             </tr>
+           </tbody>
+
+           </table>
+
+         </section>
+
+         <section class="receiver_details">
+
+           <table>
+             <caption>Receiver Details</caption>
+
+             <thead>
+               <tr>
+                 <th scope="col">FIRST NAME</th>
+                 <th scope="col">LAST NAME</th>
+                 <th scope="col">PHONE NUMBER</th>
+               </tr>
+             </thead>
+
+             <tbody>
+               <tr>
+                 <td scope='row' data-label='FIRST NAME:'><input type='text'
+                    name='receiver_first_name' placeholder="LASTNAME"
+                    class="input-control">
+                 </td>
+                 <td scope='row' data-label='LAST NAME:'> <input type='text'
+                    name='receiver_last_name' placeholder="FIRSTNAME"
+                    class="input-control">
+                 </td>
+                 <td scope='row' data-label='PHONE NUMBER'> <input type='text'
+                    name='receiver_phone' placeholder="PHONE NUMBER"
+                     class="input-control">
+                 </td>
+               </tr>
+             </tbody>
+
+           </table>
+         </section>
+         <section class="parcel_description">
+             <table>
+               <caption>Parcel Dimensions</caption>
+
+               <thead>
+                 <tr>
+                   <th scope="col">LENGTH</th>
+                   <th scope="col">BREADTH</th>
+                   <th scope="col">HEIGHT</th>
+                   <th scope="col">UNIT</th>
+                 </tr>
+               </thead>
+               <tbody>
+                 <tr>
+
+                     <td data-label='LENGTH'>
+                         <input type="number" placeholder="LENGTH" name='item_length' min='0' class="input-control">
+                     </td>
+                     <td data-label='BREADTH'>
+                         <input type="number" name='item_breadth' class="input-control" min='0' placeholder="BREATH">
+                     </td>
+                     <td data-label='HEIGHT'>
+                         <input type="number" name='item_height' class="input-control" min='0' placeholder="HEIGHT">
+                     </td>
+                     <td data-label='UNIT'>
+                             <select name='length_unit' class="btn btn-small">
+                                 <option value=""></option>
+                                 <option value="1">Centimeters</option>
+                                 <option value="2">Inches</option>
+                                 <option value="3">foot</option>
+                             </select>
+                         </td>
+                     </tr>
+                   </tbody>
+         </table>
+         <table>
+
+             <thead>
+               <br>
+                 <i class='text-orange'>NOTE: The parcel value is
+                    for estimating insurance for the parcel
+                 &nbsp;we care about safety of your product</i>
+               <br>
+               <tr>
+                   <th scope="col">PARCEL MONETARY VALUE</th>
+                   <th scope="col">CURRENCY</th>
+                   <th scope="col">PICK UP DATE</th>
+                   <th scope="col">PICK UP TIME</th>
+               </tr>
+             </thead>
+
+             <tbody>
+               <tr>
+                   <td data-label='VALUE'> <input type="number" name='item_value'
+                      class="input-control" min='0' placeholder="VALUE">
+                   <td data-label='CURRRENCY'>
+                       <select name='currency' class="btn btn-small">
+                           <option value="">select CURRENCY</option>
+                           <option value="1">USD</option>
+                           <option value="2">POUNDS</option>
+                           <option value="3">UGANDA SHIILLINGS</option>
+                       </select>
+                   </td>
+                   <td data-label="PICK UP DATE">
+                       <input type='date' name="pick_up_date"
+                        class="input-control" value="2018-11-04">
+                   </td>
+                   <td data-label="PICK UP TIME">
+                       <input type='time' name="pick_up_time"
+                       class="input-control" value="09:30">
+                   </td>
+               </tr>
+           </tbody>
+         </table>
+
+         <table>
+           <thead>
+           </thead>
+           <tbody>
+             <tr>
+                 <td data-aria=""> <input type='submit' name="btn-place_order"
+                    class="btn block bg-green text-white floating"
+                    value="ADD PARCEL ORDER"> </td>
+             </tr>
+             </tbody>
+           </table>
+         </form>
+
+  <footer class="bg-black">
+    <a class='btn bg-blue text-white' href="profile.html">
+      S&#8455;&#8469;&#8517;<i>IT</i>&nbsp;&nbsp;&copy;2018
+  </a>
+  </footer>
+</div>
+</body>
+</html>
