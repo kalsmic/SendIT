@@ -64,13 +64,14 @@ nav {
 
   .view_orders {
     grid-column: col-start / span 3;
-    grid-row: 4;
+    grid-row: 5;
   }
 
-  .events {
+  .search_orders {
     grid-column: col-start / span 3;
-    grid-row: 5;
-    background: var(--black);
+    grid-row: 4;
+    background: var(--green);
+    color: var(--white);
   }
 
   footer {
@@ -123,7 +124,7 @@ nav {
     grid-row: 2;
   }
 
-   .events  {
+   .search_orders  {
      grid-column: col-start 1/ span 1;
      grid-row: 4/6;
    }

@@ -21,12 +21,12 @@
   <nav>
     <ul>
 
-      <li><a class=" btn bg-black text-white" href="view_orders.html fadein">VIEW ORDERS</a></li>
-      <li><a class="btn bg-black text-white pull-right" href="place_order.html">Place Order</a></li>
+      <li><a class=" btn bg-white text-black floating" href="view_orders.html fadein">VIEW ORDERS</a></li>
+      <li><a class="btn bg-white text-black floating pull-right" href="place_order.html">Place Order</a></li>
 
-      <li><a class=" btn bg-black text-white" href="profile.html ">PROFILE</a></li>
+      <li><a class="active btn bg-white text-blue floating" href="profile.html "><u>PROFILE</u></a></li>
 
-      <li><a class=" btn bg-lred text-white  pull-right" href="index.html"><i class="fa fa-power-off"></i>logout</a></li>
+      <li><a class=" btn bg-white text-red floating pull-right" href="index.html"><i class="fa fa-power-off"></i>logout</a></li>
     </ul>
   </nav>
 
@@ -50,43 +50,25 @@
       </div>
     </div>
   </aside>
+  <div class="search_orders">
+    <h2>Find Order</h2>
+    <input id='_DATE'
+       onkeyup="searchTable(('view_orders','_DATE',1)"
+       placeholder="BY DATE">
+       <input  id='_trackID'
+          onkeyup="searchTable('view_orders','_trackID',2)"
+          placeholder="BY TRACKING ID">
+    <input id='_descID'
+       onkeyup="searchTable(('view_orders','_descID',3)"
+       placeholder="BY DESCRIPTION">
 
+    <input id='_STATUSID'
+         onkeyup="searchTable(('view_orders','_STATUSID',4)"
+         placeholder="BY STATUS">
+  </div>
 
   <main class="view_orders">
-    <table id='searchOrders'>
-      <thead>
-        <tr>
-           <th scope='col'>SEARCH</th>
-           <th scope='col'>DATE</th>
-           <th scope='col'>TRACKING ID</th>
-           <th scope='col'>DESCRIPTION</th>
-           <th scope='col'>STATUS</th>
-           <th scope='col'></th>
-         </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td scope='row' data-label='SEARCH'>PARCEL ORDER</td>
-        <td data-label='DATE'>
-         <input type="text" id='_date' class="input-control"
-          onkeyup="searchTable('view_orders','_date',1)"
-            placeholder="BY DATE">
-        </td>
-        <td data-label='TRACKING ID'>
-          <input  type="text" id='_trackID'  class="input-control"
-         onkeyup="searchTable('view_orders','_trackID',2)" placeholder="ID">
-       </td>
-       <td data-label='DECRIPTION'> <input type="text" id='_descID'
-          onkeyup="searchTable('view_orders','_descID',3)" class="input-control"
-          placeholder="DESC">
-        </td>
-        <td data-label='STATUS'><input type="text" id='_statusID'
-         onkeyup="searchTable('view_orders','_statusID',4)"  class="input-control"
-         placeholder="STATUS"></td>
-         <td ></td>
-     </tr>
-   </tbody>
-    </table>
+
     <table id='view_orders'>
        <thead>
          <tr>
@@ -95,15 +77,15 @@
             <th scope='col'>TRACKING ID</th>
             <th scope='col'>DESC</th>
             <th scope='col'>STATUS</th>
-            <th scope='col'><span class="btn bg-blue text-white btn-xlarge">&#10161;</span></th>
-            <th scope='col' ><span class="btn bg-lblue text-white btn-xlarge">&#9997;</span></th>
-            <th scope='col'><span class="bg-btn btn-xlarge">&#9876;</span></th>
+            <th scope='col'>VIEW</th>
+            <th scope='col' >EDIT</th>
+            <th scope='col'>CANCEL</th>
            </tr>
        </thead>
        <tbody>
           <tr>
             <td scope='row' data-label='#'>1</td>
-            <td data-label='DATE'>12/FEB/2018</td>
+            <td data-label='DATE'>12/02/2018</td>
             <td data-label='TRACKING ID'>SDT123</td>
             <td data-label='DECRIPTION'>Academic Documents</td>
             <td data-label='STATUS' class="text-orange">Pending</td>
@@ -116,7 +98,7 @@
           </tr>
           <tr>
               <td scope='row' data-label='#'>2</td>
-              <td data-label='DATE'>22/MAR/2018</td>
+              <td data-label='DATE'>22/04/2018</td>
               <td data-label='TRACKING ID'>SDT124</td>
               <td data-label='DESCRIPTION'>laptop</td>
               <td data-label='STATUS' class="text-green">Delivered</td>
@@ -128,7 +110,7 @@
             </tr>
             <tr>
               <td scope='row' data-label='#'>3</td>
-              <td data-label='DATE'>24/MAR/2018</td>
+              <td data-label='DATE'>24/05/2018</td>
               <td data-label='TRACKING ID'>SDT784</td>
               <td data-label='DESCRIPTION'>FRIDGE</td>
               <td data-label='STATUS' class="text-red">Cancelled</td>
@@ -141,7 +123,7 @@
             </tr>
             <tr>
               <td scope='row' data-label='#'>4</td>
-              <td data-label='DATE'>27/MAR/2018</td>
+              <td data-label='DATE'>27/06/2018</td>
               <td data-label='TRACKING ID'>SDT783</td>
               <td data-label='DESCRIPTION'>Bright Box wireless router</td>
               <td class="text-blue">In Transit</td>
@@ -153,9 +135,7 @@
          </tbody>
         </table>
     </main>
-    <article class="events">
-      <h2>Up comming events</h2>
-    </article>
+
 
   <footer class="bg-black">
     <a class='btn bg-blue text-white' href="profile.html">
