@@ -70,7 +70,7 @@
           </tr>
        </thead>
        <tbody>
-          <tr>
+          <tr id='dry1'>
             <td scope='row' data-label='#'>1</td>
             <td data-label='DATE'>12/02/2018</td>
             <td data-label='TRACKING ID'>SDT123</td>
@@ -80,8 +80,8 @@
                class=" btn btn-xlarge">&#10161;</a></td>
             <td data-label='EDIT'><a href='edit_order.html'
               class="bg-btn btn-xlarge">&#9997;</a></td>
-            <td data-label='CANCEL'><a class=" btn btn-xlarge text-red">
-              &#9876;</a></td>
+            <td data-label='CANCEL'><button onclick="cancelOrder('dry1')" class=" btn btn-xlarge bg-white text-red">
+              &#9876;</button></td>
           </tr>
           <tr>
               <td scope='row' data-label='#'>2</td>
@@ -91,9 +91,10 @@
               <td data-label='STATUS' class="text-green">Delivered</td>
               <td data-label='VIEW'><a href="view_order.html"
                 class=" btn btn-xlarge">&#10161;</a></td>
-              <td data-label='EDIT'><a class=" btn btn-xlarge text-biege">&#9997;</a></td>
-              <td data-label='CANCEL'><a
-                class="btn btn-xlarge text-red">&#9876;</a></td>
+              <td data-label='EDIT'><button onclick="AlertUser('Error: Cannot Edit an already delivered order')"
+                class=" btn btn-xlarge text-biege">&#9997;</button></td>
+              <td data-label='CANCEL'><button onclick="AlertUser('Error, Cannot cancel an already delivered order')"
+                class="btn btn-xlarge text-red">&#9876;</button></td>
             </tr>
             <tr>
               <td scope='row' data-label='#'>3</td>
@@ -103,10 +104,10 @@
               <td data-label='STATUS' class="text-red">Cancelled</td>
               <td data-label='VIEW'><a href="view_order.html"
                 class=" btn btn-xlarge">&#10161;</a></td>
-              <td data-label='EDIT'><a
-                class=" btn btn-xlarge text-biege">&#9997;</a></td>
-              <td data-label='CANCEL'><a
-                class=" btn btn-xlarge text-red">&#9876;</a></td>
+              <td data-label='EDIT'><button onclick="AlertUser('Error: Cannot Edit Cancelled Order')"
+                class=" btn btn-xlarge text-biege" disabled>&#9997;</button></td>
+              <td data-label='CANCEL'><button onclick="AlertUser('Error: Order Already Cancelled')"
+                class=" btn btn-xlarge text-red">&#9876;</button></td>
             </tr>
             <tr>
               <td scope='row' data-label='#'>4</td>
@@ -114,9 +115,12 @@
               <td data-label='TRACKING ID'>SDT783</td>
               <td data-label='DESCRIPTION'>Bright Box wireless router</td>
               <td class="text-blue">In Transit</td>
-              <td data-label='VIEW'><a href="view_order.html" class=" btn btn-xlarge">&#10161;</a></td>
-              <td data-label='EDIT'><a  class=" btn btn-xlarge text-biege">&#9997;</a></td>
-              <td data-label='CANCEL'><a
+              <td data-label='VIEW'><a href="view_order.html" class="btn btn-xlarge">&#10161;</a></td>
+              <td data-label='EDIT'>
+              <button onclick="AlertUser('Error: Cannot edit, Item already in transit')"
+                class=" btn btn-xlarge text-biege" disabled>&#9997;</button></td>
+              <td data-label='CANCEL'><button
+                onclick="AlertUser('Error: Can not cancel order,Already in transit')"
                 class=" btn btn-xlarge text-red">&#9876;</a></td>
             </tr>
          </tbody>
@@ -130,4 +134,5 @@
   </footer>
 </div>
 </body>
+<script src='./static/js/getFeedBackWIthAlert.js'></script>
 </html>
