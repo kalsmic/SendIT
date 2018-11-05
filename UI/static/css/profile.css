@@ -67,10 +67,9 @@ nav {
     grid-row: 4;
   }
 
-  .events {
-    grid-column: col-start / span 3;
-    grid-row: 5;
-    background: var(--black);
+  .content {
+    grid-column: col-start / span 12;
+    grid-row: 3;
   }
 
   footer {
@@ -123,14 +122,14 @@ nav {
     grid-row: 2;
   }
 
-   .events  {
-     grid-column: col-start 1/ span 1;
-     grid-row: 4/6;
-   }
   .view_orders {
    grid-column:col-start 2 /span 12;
    grid-row:3/ 6;
  }
+ .content {
+   grid-column: col-start 4  /span 12;
+   grid_row:3
+}
 
   footer {
     grid-column: col-start / span 12;

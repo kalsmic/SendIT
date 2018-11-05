@@ -3,7 +3,6 @@
 @import 'buttons.css';
 @import 'animations.css';
 @import 'badges.css';
-@import 'table.css';
 body {
   font-family: "Open Sans", sans-serif;
   line-height: 1.25;
@@ -32,4 +31,8 @@ h1   { font-size: 2.4rem; }
       list-style: none;
       margin: 0;
       padding: 0;
+}
+.page_label {
+text-decoration: underline;
+color:var(--blue);
 }
