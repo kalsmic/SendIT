@@ -1,7 +1,6 @@
 @import 'form.css';
 @import 'colors.css';
 @import 'buttons.css';
-@import 'animations.css';
 @import 'badges.css';
 body {
   font-family: "Open Sans", sans-serif;
@@ -17,13 +16,14 @@ h1   { font-size: 2.4rem; }
       /* max-width: 1024px; */
       margin: 0 auto;
       font: 1.2em Helvetica, arial, sans-serif;
+
   }
 
   .wrapper > * {
       border-radius: 5px;
       padding: 10px;
   }
- header {
+ .header {
    width:100%;
    background-color: var(--light_black);
    }
@@ -35,4 +35,22 @@ h1   { font-size: 2.4rem; }
 .page_label {
 text-decoration: underline;
 color:var(--blue);
+}
+
+.footer  {
+    position: fixed;
+    bottom:0;
+    width: 100%;
+}
+.paper_background  {
+    background-image: url('../img/paper_background.png');
+}
+.paper_pg_none  {
+    background: none;
+}
+
+.footer {
+    position: fixed;
+    bottom:0;
+
 }
