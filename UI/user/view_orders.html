@@ -38,6 +38,7 @@
 
             <main class="place_order main">
 
+
                 <label class='page_label btn bg-white text-blue'>ORDERS</label>
                 <section>
                     <table class="full_widith">
@@ -45,22 +46,28 @@
                             <tr>
                                 <th class="btn btn-block">SEARCH BY</th>
                                 <th>
-                                    <input type="text" placeholder="status" id='orderstatus'>
+                                    <input type="text" placeholder="status"  id='orderstatus'
+                                    onkeyup="searchTable('tb_orders','orderstatus',1)">
                                 </th>
                                 <th>
-                                    <input type="text" placeholder="Item name" id='itemName'>
+                                    <input type="text" placeholder="Item name" id='itemName'
+                                    onkeyup="searchTable('tb_orders','itemName',2)">
                                 </th>
                                 <th>
-                                    <input type="text" placeholder="Pickup Location" id='itemPickup'>
+                                    <input type="text" placeholder="Pickup Location" id='itemPickup'
+                                    onkeyup="searchTable('tb_orders','itemPickup',3)">
+
                                 </th>
                                 <th>
-                                    <input type="text" placeholder="Destination" id='itemDestination'>
+                                    <input type="text" placeholder="Destination" id='itemDestination'
+                                    onkeyup="searchTable('tb_orders','itemDestination',4)">
+
                                 </th>
                                 <th rowspan="2" colspan="3">Actions</th>
                             </tr>
                             <tr>
 
-                                <th>TRACKING ID</th>
+                                <th id='orderstatus'>TRACKING ID</th>
                                 <th>STATUS</th>
                                 <th>ITEM NAME</th>
                                 <th>PICKUP LOCATION</th>
@@ -69,7 +76,7 @@
                             </tr>
 
                         </thead>
-                        <tbody>
+                        <tbody id='tb_orders'>
                             <tr id=ord1>
                                 <td>
                                     <p>SDT124
@@ -146,6 +153,8 @@
         </footer>
     </div>
     <script src="../static/js/getFeedBackWIthAlert.js"></script>
+    <script src="../static/js/search_table.js"></script>
+
    
 </body>
 
