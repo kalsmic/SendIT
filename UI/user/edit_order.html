@@ -72,10 +72,10 @@
                     
                         <td>WORKER's HOUSE
                         </td>
-                        <form action='edited_order.html'>
+                        <form action='edited_order.html' method="POST">
                         <td><input type='text'
                           value='ACACIA AVENUE SHOP X8' required>  <input type='submit' name="btn-place_order"
-                            class="btn bg-green text-white "
+                            class="btn bg-green text-white" href='edited_order.html' required
                             value="UPDATE">
 
                         </td>
@@ -127,7 +127,7 @@
                   <thead>
                      <tr>
                         <th>PARCEL MONETARY VALUE</th>
-                        <th>CURRENCY</th>
+                        scope='row'               <th>CURRENCY</th>
                         <th>PICKED ON</th>
                         <th>DELIVERED ON</th>
 
