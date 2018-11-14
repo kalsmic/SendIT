@@ -1,85 +1,4 @@
-table.mobile {
-  border: 1px solid #ccc;
-  border-collapse: collapse;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  table-layout: relative;
-}
 
-table.mobile caption {
-  font-size: 1.5em;
-  margin: .5em 0 .75em;
-}
-
-table.mobile tr {
-  background-color: #f8f8f8;
-  border: 1px solid #ddd;
-  padding: .35em;
-}
-
-table.mobile th,
-table.mobile td {
-  padding: .625em;
-  text-align: center;
-}
-
-table.mobile th {
-  font-size: .85em;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-  border: 1px solid black;
-
-}
-
-@media screen and (max-width: 600px) {
-  table.mobile {
-    border: 0;
-  }
-
-  table.mobile caption {
-    font-size: 1.3em;
-  }
-
-  table.mobile thead {
-    border: none;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-  }
-
-  table.mobile tr {
-    border-bottom: 3px solid #ddd;
-    display: block;
-    margin-bottom: .625em;
-  }
-
-  table.mobile td {
-    /* border-bottom: 1px solid #ddd; */
-    display: block;
-    font-size: .8em;
-    text-align: right;
-  border: 1px solid beige;
-  text-align: center;
-
-
-  }
-
-  table.mobile td::before {
-    content: attr(data-label);
-    float: left;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-
-  table.mobile td:last-child {
-    border-bottom: 0;
-  }
-}
 table.full_widith {
   width: 100%;
   background-color: #ffffff;
@@ -88,6 +7,7 @@ table.full_widith {
   border-color: #5f5e5c;
   border-style: solid;
   color: #000000;
+  table-layout: relative;
 }
 
 table.full_widith td, table.full_widith th {

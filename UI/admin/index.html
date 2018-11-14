@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name='viewport' content="width=device-width, initial-scale=1.0">
-  <title>login | Register </title>
+  <title>ADMIN | LOGIN </title>
   <link href="../static/css/style.css" type="text/css" rel="Stylesheet">
 </head>
 <body>
@@ -12,21 +12,20 @@
     <a class='btn bg-blue text-white' href="#">
       S&#8455;&#8469;&#8517;<i>IT</i>
   </a>
-   
   </header>
 
   <main class="page-content">
     <section class="login_register_container vertical-form">
         <fieldset>
-        <legend>  <h2 class="text-blue">ADMIN LOGIN IN</h2></legend>
-        <form action='#' method="POST">
+        <legend><h2 class="text-blue">ADMIN LOGIN IN</h2></legend>
+        <form  method="POST"  action="dashboard.html">
           <input type='text' name='username' placeholder="USERNAME" required
            class='input-control'>
              <input type="password" id="password"  name="password"
           placeholder="PASSWORD" required
            class='input-control'><br><br>
-          <button type="submit" name='btn_login'
-          class='btn bg-blue btn-medium text-white'>Login</button>
+          <input type="submit" value='Login' href='dashboard.html'
+          class='btn bg-blue btn-medium text-white'>
        
         </form>
       </fieldset>
@@ -34,7 +33,7 @@
   </main>
 
   <footer class="bg-black footer">
-    <a class='btn bg-blue text-white' href="profile.html">
+    <a class='btn bg-blue text-white' href="./dashboard.html">
       S&#8455;&#8469;&#8517;<i>IT</i>&nbsp;&nbsp;&copy;2018
   </a>
   </footer>

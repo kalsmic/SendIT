@@ -65,7 +65,7 @@ h1   { font-size: 2.4rem; }
 
 .footer  {
     grid-area: footer;
-    position: fixed;
+    /* position: fixed; */
     bottom:0;
     background-color: var(--light_black);
     width: 100%;
