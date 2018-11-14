@@ -38,29 +38,36 @@
 
             <main class="place_order main">
 
-                <label class='page_label btn bg-white text-blue'><u>ORDERS</u></label>
+
+                <label class='page_label btn bg-white text-blue'>ORDERS</label>
                 <section>
                     <table class="full_widith">
                         <thead>
                             <tr>
                                 <th class="btn btn-block">SEARCH BY</th>
                                 <th>
-                                    <input type="text" placeholder="status" id='orderstatus'>
+                                    <input type="text" placeholder="status"  id='orderstatus'
+                                    onkeyup="searchTable('tb_orders','orderstatus',1)">
                                 </th>
                                 <th>
-                                    <input type="text" placeholder="Item name" id='itemName'>
+                                    <input type="text" placeholder="Item name" id='itemName'
+                                    onkeyup="searchTable('tb_orders','itemName',2)">
                                 </th>
                                 <th>
-                                    <input type="text" placeholder="Pickup Location" id='itemPickup'>
+                                    <input type="text" placeholder="Pickup Location" id='itemPickup'
+                                    onkeyup="searchTable('tb_orders','itemPickup',3)">
+
                                 </th>
                                 <th>
-                                    <input type="text" placeholder="Destination" id='itemDestination'>
+                                    <input type="text" placeholder="Destination" id='itemDestination'
+                                    onkeyup="searchTable('tb_orders','itemDestination',4)">
+
                                 </th>
                                 <th rowspan="2" colspan="3">Actions</th>
                             </tr>
                             <tr>
 
-                                <th>TRACKING ID</th>
+                                <th id='orderstatus'>TRACKING ID</th>
                                 <th>STATUS</th>
                                 <th>ITEM NAME</th>
                                 <th>PICKUP LOCATION</th>
@@ -69,7 +76,7 @@
                             </tr>
 
                         </thead>
-                        <tbody>
+                        <tbody id='tb_orders'>
                             <tr id=ord1>
                                 <td>
                                     <p>SDT124
@@ -84,10 +91,10 @@
                                 <td>NSSF Worker's House 14TH Floor&nbsp;</td>
                                 <td><a href="edit_order.html"><i class="fas fa-pen text-blue btn btn-xlarge"></i></td>
                                 <td><a href="view_order.html"><i class="fas fa-eye text-blue btn btn-xlarge"></i></td>
-          <td><button onclick="cancelOrder('str1')" class=" btn btn-xlarge bg-white text-red bg-white"><i class="fas fa-times"></i></button></td>
+                                <td><button onclick="cancelOrder('str1')" class=" btn btn-xlarge bg-white text-red bg-white">
+                                    <i class="fas fa-times"></i></button></td>
 
                                   
-                                <!-- <td><i class="fas fa-times text-red btn btn-xlarge" onclick="cancelOrder('Str1')"></i></td> -->
 
                             </tr>
                             <tr id=ord2>
@@ -127,7 +134,7 @@
                                     <p>Beats Solo wireless<p>
                                 </td>
                                 <td>Sunna Sound drive Limited</td>
-                                <td>Kalsmic Investiment limited&nbsp;<i class="fas fa-pen text-blue"></i></td>
+                                <td>Kalsmic Investiment limited</i></td>
                                 <th><a><i class="fas fa-pen text-gray btn btn-xlarge"></i></a></th>
                                 <th><a href="view_order.html"><i class="fas fa-eye text-blue btn btn-xlarge"></i></th>
                                 <th><a><i class="fas fa-times text-gray btn btn-xlarge"></i></a></th>
@@ -146,6 +153,8 @@
         </footer>
     </div>
     <script src="../static/js/getFeedBackWIthAlert.js"></script>
+    <script src="../static/js/search_table.js"></script>
+
    
 </body>
 

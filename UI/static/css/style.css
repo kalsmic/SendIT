@@ -105,6 +105,9 @@ margin-bottom:300px;
  .page_label{
  text-decoration: underline;
  color:var(--blue);
+ display: flex;
+ justify-content: center;
+ 
  }
  .active
  {
