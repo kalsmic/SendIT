@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name='viewport' content="width=device-width, initial-scale=1.0">
+  <title>PROFILE</title>
+  <link href='../static/css/table.css' type="text/css" rel="Stylesheet">
+  <link href="../static/css/style.css" type="text/css" rel="Stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
+  integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" 
+  crossorigin="anonymous">
+</style>
+
+</head>
+<body>
+  <div class="wrapper">
+
+  <header class="header">
+
+  <a class='btn bg-blue text-white' href="profile.html">
+      S&#8455;&#8469;&#8517;<i>IT</i>
+  </a>
+  
+  <nav class="nav">
+    <ul>
+      <li><a class=" welcome btn bg-black text-white" href="profile.html">Welcome User</a></li>
+      <li><a class=" btn bg-white text-black " href="view_orders.html">VIEW ORDERS</a></li>
+      <li><a  class="btn bg-white text-black  pull-right" href="place_order.html">Place Order</a></li>
+
+      <li><a class=" btn bg-white text-black " href="profile.html ">PROFILE</a></li>
+
+      <li><a class=" btn bg-white text-red  pull-right" href="../index.html"><i class="fas fa-power-off"></i> logout</a></li>
+    </ul>
+  </nav> 
+</header>
+<div class="main_wrapper">
+
+  <main class="place_order main">
+
+
+            <label class='page_label  btn bg-white text-blue'><u>PARCEL ORDER DETAILS</u></label>
+            <section class="location_details">
+               <table class="full_widith">
+                  <thead>
+                     <tr>
+                       <th scope='col'>TRACKING ID</th>
+                       <th scope='col'>DELIVERY STATUS</th>
+                        <th scope="col">ITEM NAME</th>
+                        <th scope="col">PICKUP LOCATION</th>
+                        <th scope="col">DESTINATION</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td scope='row' data-aria='ITEM'><p>SDT124<p></td>
+                        <td scope='row' data-aria='DELIVERY STATUS' class="text-green">DELIVERED</td>
+                        <td scope='row' data-aria='ITEM'><p>LAPTOP<p></td>
+                        <td scope='row' data-aria='PICK UP LOCATION'>WORKER's HOUSE
+                        </td>
+                        <td scope='row' data-aria='DESTINATION'>ACACIA AVENUE SHOP X8
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </section>
+            <section class="receiver_details">
+               <table class="full_widith"><br>
+                  <caption>RECEIVER DETAILS</caption><br>
+                  <thead>
+                     <tr>
+                        <th scope="col">FIRST NAME</th>
+                        <th scope="col">LAST NAME</th>
+                        <th scope="col">PHONE NUMBER</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td scope='row' data-aria='FIRST NAME:'>ARTHUR</td>
+                        <td scope='row' data-aria='LAST NAME:'>KALULE</td>
+                        <td scope='row' data-aria='PHONE NUMBER'> +000256526625</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </section>
+            <section class="parcel_description">
+               <table class="full_widith"><br>
+                  <caption>PARCEL DIMENSIONS</caption><br>
+                  <thead>
+                     <tr>
+                        <th scope="col">LENGTH</th>
+                        <th scope="col">BREADTH</th>
+                        <th scope="col">HEIGHT</th>
+                        <th scope="col">UNIT</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td data-label='LENGTH'>17</td>
+                        <td data-label='BREADTH'>17</td>
+                        <td data-label='HEIGHT'>10</td>
+                        <td data-label='HEIGHT'>INCHES</td>
+                     </tr>
+                  </tbody>
+               </table>
+               <table class="full_widith"><br>
+                  <thead>
+                     <tr>
+                        <th scope="col">PARCEL MONETARY VALUE</th>
+                        <th scope="col">CURRENCY</th>
+                        <th scope="col">PICKED ON</th>
+                        <th scope="col">DELIVERED ON</th>
+
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td data-label='VALUE'>450
+                        <td data-label='CURRRENCY'>USD</td>
+                        <th data-label="DELiVERED ON">2018-13-0 @ 12:30 AM</th>
+                        <td data-label="PICK UP TIME">2018-10-03 @ 09:30 AM</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </section>
+      
+   </main>
+</div>
+  <footer class="bg-black">
+    <a class='btn bg-blue text-white' href="profile.html">
+      S&#8455;&#8469;&#8517;<i>IT</i>&nbsp;&nbsp;&copy;2018
+    </a>
+  </footer>
+</div>
+</body>
+</html>

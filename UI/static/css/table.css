@@ -1,0 +1,25 @@
+
+table.full_widith {
+  width: 100%;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: #5f5e5c;
+  border-style: solid;
+  color: #000000;
+  table-layout: relative;
+}
+
+table.full_widith td, table.full_widith th {
+  border-width: 2px;
+  border-style: solid;
+  /* padding: 3px; */
+  border: 1px solid #ababa6;
+  padding: 3px;
+
+}
+
+table.full_widith thead {
+  background-color: lightblue;
+  color: white;
+}
