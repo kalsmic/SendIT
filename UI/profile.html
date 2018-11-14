@@ -50,70 +50,70 @@
 
   <main class="view_orders">
 
-    <table >
+    <table>
        <thead>
          <tr>
-            <th scope='col'>#</th>
-            <th scope='col'>DATE</th>
-            <th scope='col'>TRACKING ID</th>
-            <th scope='col'>DESC</th>
-            <th scope='col'>STATUS</th>
-            <th scope='col'>VIEW</th>
-            <th scope='col' >EDIT</th>
-            <th scope='col'>CANCEL</th>
+            <th>#</th>
+            <th>DATE</th>
+            <th>TRACKING ID</th>
+            <th>DESC</th>
+            <th>STATUS</th>
+            <th>VIEW</th>
+            <th >EDIT</th>
+            <th>CANCEL</th>
           </tr>
        </thead>
        <tbody>
           <tr id='dry1'>
-            <td scope='row' data-label='#'>1</td>
-            <td data-label='DATE'>12/02/2018</td>
-            <td data-label='TRACKING ID'>SDT123</td>
-            <td data-label='DECRIPTION'>Academic Documents</td>
-            <td data-label='STATUS' class="text-orange">Pending</td>
-            <td data-label='VIEW'><a href="view_order.html"
+            <td>1</td>
+            <td>12/02/2018</td>
+            <td>SDT123</td>
+            <td>Academic Documents</td>
+            <td class="text-orange">Pending</td>
+            <td><a href="view_order.html"
                class=" btn btn-xlarge">&#10161;</a></td>
-            <td data-label='EDIT'><a href='edit_order.html'
+            <td><a href='edit_order.html'
               class="bg-btn btn-xlarge">&#9997;</a></td>
-            <td data-label='CANCEL'><button onclick="cancelOrder('dry1')" class=" btn btn-xlarge bg-white text-red">
+            <td><button onclick="cancelOrder('dry1')" class=" btn btn-xlarge bg-white text-red">
               &#9876;</button></td>
           </tr>
           <tr>
-              <td scope='row' data-label='#'>2</td>
-              <td data-label='DATE'>22/04/2018</td>
-              <td data-label='TRACKING ID'>SDT124</td>
-              <td data-label='DESCRIPTION'>laptop</td>
-              <td data-label='STATUS' class="text-green">Delivered</td>
-              <td data-label='VIEW'><a href="view_order.html"
+              <td>2</td>
+              <td>22/04/2018</td>
+              <td>SDT124</td>
+              <td>laptop</td>
+              <td class="text-green">Delivered</td>
+              <td><a href="view_order.html"
                 class=" btn btn-xlarge">&#10161;</a></td>
-              <td data-label='EDIT'><button onclick="AlertUser('Error: Cannot Edit an already delivered order')"
+              <td><button onclick="AlertUser('Error: Cannot Edit an already delivered order')"
                 class=" btn btn-xlarge text-biege">&#9997;</button></td>
-              <td data-label='CANCEL'><button onclick="AlertUser('Error, Cannot cancel an already delivered order')"
+              <td><button onclick="AlertUser('Error, Cannot cancel an already delivered order')"
                 class="btn btn-xlarge text-red">&#9876;</button></td>
             </tr>
             <tr>
-              <td scope='row' data-label='#'>3</td>
-              <td data-label='DATE'>24/05/2018</td>
-              <td data-label='TRACKING ID'>SDT784</td>
-              <td data-label='DESCRIPTION'>FRIDGE</td>
-              <td data-label='STATUS' class="text-red">Cancelled</td>
-              <td data-label='VIEW'><a href="view_order.html"
+              <td>3</td>
+              <td>24/05/2018</td>
+              <td>SDT784</td>
+              <td>FRIDGE</td>
+              <td class="text-red">Cancelled</td>
+              <td><a href="view_order.html"
                 class=" btn btn-xlarge">&#10161;</a></td>
-              <td data-label='EDIT'><button onclick="AlertUser('Error: Cannot Edit Cancelled Order')"
+              <td><button onclick="AlertUser('Error: Cannot Edit Cancelled Order')"
                 class=" btn btn-xlarge text-biege" disabled>&#9997;</button></td>
-              <td data-label='CANCEL'><button onclick="AlertUser('Error: Order Already Cancelled')"
+              <td><button onclick="AlertUser('Error: Order Already Cancelled')"
                 class=" btn btn-xlarge text-red">&#9876;</button></td>
             </tr>
             <tr>
-              <td scope='row' data-label='#'>4</td>
-              <td data-label='DATE'>27/06/2018</td>
-              <td data-label='TRACKING ID'>SDT783</td>
-              <td data-label='DESCRIPTION'>Bright Box wireless router</td>
+              <td>4</td>
+              <td>27/06/2018</td>
+              <td>SDT783</td>
+              <td>Bright Box wireless router</td>
               <td class="text-blue">In Transit</td>
-              <td data-label='VIEW'><a href="view_order.html" class="btn btn-xlarge">&#10161;</a></td>
+              <td><a href="view_order.html" class="btn btn-xlarge">&#10161;</a></td>
               <td data-label='EDIT'>
               <button onclick="AlertUser('Error: Cannot edit, Item already in transit')"
                 class=" btn btn-xlarge text-biege" disabled>&#9997;</button></td>
-              <td data-label='CANCEL'><button
+              <td><button
                 onclick="AlertUser('Error: Can not cancel order,Already in transit')"
                 class=" btn btn-xlarge text-red">&#9876;</a></td>
             </tr>
