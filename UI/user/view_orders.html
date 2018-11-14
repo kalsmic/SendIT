@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name='viewport' content="width=device-width, initial-scale=1.0">
+    <title>PROFILE</title>
+    <link href='../static/css/table.css' type="text/css" rel="Stylesheet">
+    <link href="../static/css/style.css" type="text/css" rel="Stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    </style>
+ 
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header class="header">
+
+            <a class='btn bg-blue text-white' href="profile.html">
+      S&#8455;&#8469;&#8517;<i>IT</i>
+  </a>
+
+            <nav class="nav">
+                <ul>
+                    <li><a class=" welcome btn bg-black text-white" href="profile.html">Welcome User</a></li>
+                    <li><a class=" active btn bg-white text-black " href="view_orders.html">VIEW ORDERS</a></li>
+                    <li><a class="btn bg-white text-black  pull-right" href="place_order.html">Place Order</a></li>
+
+                    <li><a class=" btn bg-white text-black " href="profile.html ">PROFILE</a></li>
+
+                    <li><a class=" btn bg-white text-red  pull-right" href="../index.html"><i class="fas fa-power-off"></i> logout</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="main_wrapper">
+
+            <main class="place_order main">
+
+                <label class='page_label btn bg-white text-blue'><u>ORDERS</u></label>
+                <section>
+                    <table class="full_widith">
+                        <thead>
+                            <tr>
+                                <th class="btn btn-block">SEARCH BY</th>
+                                <th>
+                                    <input type="text" placeholder="status" id='orderstatus'>
+                                </th>
+                                <th>
+                                    <input type="text" placeholder="Item name" id='itemName'>
+                                </th>
+                                <th>
+                                    <input type="text" placeholder="Pickup Location" id='itemPickup'>
+                                </th>
+                                <th>
+                                    <input type="text" placeholder="Destination" id='itemDestination'>
+                                </th>
+                                <th rowspan="2" colspan="3">Actions</th>
+                            </tr>
+                            <tr>
+
+                                <th>TRACKING ID</th>
+                                <th>STATUS</th>
+                                <th>ITEM NAME</th>
+                                <th>PICKUP LOCATION</th>
+                                <th>DESTINATION</th>
+
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr id=ord1>
+                                <td>
+                                    <p>SDT124
+                                        <p>
+                                </td>
+                                <td id='str1' class="text-blue">Pending</td>
+                                <td>
+                                    <p>Laptop
+                                        <p>
+                                </td>
+                                <td>Acacia Avenue Shop X8</td>
+                                <td>NSSF Worker's House 14TH Floor&nbsp;</td>
+                                <td><a href="edit_order.html"><i class="fas fa-pen text-blue btn btn-xlarge"></i></td>
+                                <td><a href="view_order.html"><i class="fas fa-eye text-blue btn btn-xlarge"></i></td>
+          <td><button onclick="cancelOrder('str1')" class=" btn btn-xlarge bg-white text-red bg-white"><i class="fas fa-times"></i></button></td>
+
+                                  
+                                <!-- <td><i class="fas fa-times text-red btn btn-xlarge" onclick="cancelOrder('Str1')"></i></td> -->
+
+                            </tr>
+                            <tr id=ord2>
+                                <td><p>SDT125<p></td>
+                                <td id='st2' class="text-blue">Delivered</td>
+                                <td>
+                                    <p>DJI Mavic Air  <p>
+                                </td>
+                                <td>Dà-Jiāng Innovations- Shenzhen, Guangdong</td>
+                                <td>Highway of Holiness Envangelical Ministries></i></td>
+                                <th><a><i class="fas fa-pen text-gray btn btn-xlarge"></i></a></th>
+                                <th><a href="view_order.html"><i class="fas fa-eye text-blue btn btn-xlarge"></i></th>
+                                <th><a><i class="fas fa-times text-gray btn btn-xlarge"></i></a></th>
+                                  
+                            </tr>
+                            <tr id=ord3>
+                                <td>
+                                    <p>SDT126<p>
+                                </td>
+                                <td id='st3' class="text-blue">In Transit</td>
+                                <td>
+                                    <p>Compulab MintBox Mini 2 Pro<p>
+                                </td>
+                                <td>PC World . Kampala,Uganda</td>
+                                <td>Kalsmic Investiment limited</td>
+                                <th><a><i class="fas fa-pen text-gray btn btn-xlarge"></i></a></th>
+                                <th><a href="view_order.html"><i class="fas fa-eye text-blue btn btn-xlarge"></i></th>
+                                <th><a><i class="fas fa-times text-gray btn btn-xlarge"></i></a></th>
+                                 
+                              </tr>
+                            <tr id='ord4'>
+                                <td>
+                                    <p>SDT128<p>
+                                </td>
+                                <td id='st4' class="text-blue">Cancelled</td>
+                                <td>
+                                    <p>Beats Solo wireless<p>
+                                </td>
+                                <td>Sunna Sound drive Limited</td>
+                                <td>Kalsmic Investiment limited&nbsp;<i class="fas fa-pen text-blue"></i></td>
+                                <th><a><i class="fas fa-pen text-gray btn btn-xlarge"></i></a></th>
+                                <th><a href="view_order.html"><i class="fas fa-eye text-blue btn btn-xlarge"></i></th>
+                                <th><a><i class="fas fa-times text-gray btn btn-xlarge"></i></a></th>
+
+
+                        </tbody>
+                    </table>
+                </section>
+
+            </main>
+        </div>
+        <footer class="bg-black footer">
+            <a class='btn bg-blue text-white' href="profile.html">
+      S&#8455;&#8469;&#8517;<i>IT</i>&nbsp;&nbsp;&copy;2018
+    </a>
+        </footer>
+    </div>
+    <script src="../static/js/getFeedBackWIthAlert.js"></script>
+   
+</body>
+
+
+</html>
