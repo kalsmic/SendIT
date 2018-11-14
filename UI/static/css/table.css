@@ -1,4 +1,4 @@
-table {
+table.mobile {
   border: 1px solid #ccc;
   border-collapse: collapse;
   margin: 0;
@@ -7,39 +7,41 @@ table {
   table-layout: relative;
 }
 
-table caption {
+table.mobile caption {
   font-size: 1.5em;
   margin: .5em 0 .75em;
 }
 
-table tr {
+table.mobile tr {
   background-color: #f8f8f8;
   border: 1px solid #ddd;
   padding: .35em;
 }
 
-table th,
-table td {
+table.mobile th,
+table.mobile td {
   padding: .625em;
   text-align: center;
 }
 
-table th {
+table.mobile th {
   font-size: .85em;
   letter-spacing: .1em;
   text-transform: uppercase;
+  border: 1px solid black;
+
 }
 
 @media screen and (max-width: 600px) {
-  table {
+  table.mobile {
     border: 0;
   }
 
-  table caption {
+  table.mobile caption {
     font-size: 1.3em;
   }
 
-  table thead {
+  table.mobile thead {
     border: none;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -50,27 +52,52 @@ table th {
     width: 1px;
   }
 
-  table tr {
+  table.mobile tr {
     border-bottom: 3px solid #ddd;
     display: block;
     margin-bottom: .625em;
   }
 
-  table td {
-    border-bottom: 1px solid #ddd;
+  table.mobile td {
+    /* border-bottom: 1px solid #ddd; */
     display: block;
     font-size: .8em;
     text-align: right;
+  border: 1px solid beige;
+
   }
 
-  table td::before {
+  table.mobile td::before {
     content: attr(data-label);
     float: left;
     font-weight: bold;
     text-transform: uppercase;
   }
 
-  table td:last-child {
+  table.mobile td:last-child {
     border-bottom: 0;
   }
+}
+table.full_widith {
+  width: 100%;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: #5f5e5c;
+  border-style: solid;
+  color: #000000;
+}
+
+table.full_widith td, table.full_widith th {
+  border-width: 2px;
+  border-style: solid;
+  /* padding: 3px; */
+  border: 1px solid #ababa6;
+  padding: 3px;
+
+}
+
+table.full_widith thead {
+  background-color: lightblue;
+  color: white;
 }

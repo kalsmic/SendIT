@@ -1,35 +1,46 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <meta charset="utf-8">
-      <meta name='viewport' content="width=device-width, initial-scale=1.0">
-      <title>PROFILE</title>
-      <link href="./static/css/profile.css" type="text/css" rel="Stylesheet">
-      <link href="./static/css/table.css" type="text/css" rel="Stylesheet">
+<head>
+  <meta charset="utf-8">
+  <meta name='viewport' content="width=device-width, initial-scale=1.0">
+  <title>PROFILE</title>
+  <link href='../static/css/table.css' type="text/css" rel="Stylesheet">
+  <link href="../static/css/style.css" type="text/css" rel="Stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
+  integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" 
+  crossorigin="anonymous">
+</style>
 
-     </head>
-   <body>
-      <div class="wrapper">
-         <header>
-            <a class='btn bg-blue text-white' href="profile.html">
-            S&#8455;&#8469;&#8517;<i>IT</i>
-            </a>
-            <a class="btn bg-black text-white" href="profile.html">Welcome User</a>
-         </header>
-         <nav>
-            <ul>
-               <li><a class=" btn bg-white text-black floating" href="view_orders.html"><u>VIEW ORDERS</u></a></li>
-              <li><a class="btn bg-white text-black floating pull-right" href="place_order.html">Place Order</a></li>
+</head>
+<body>
+  <div class="wrapper">
 
-              <li><a class="active btn bg-white text-blue floating" href="profile.html "><u>PROFILE</u></a></li>
+  <header class="header">
 
-              <li><a class=" btn bg-white text-red floating pull-right" href="index.html"><i class="fa fa-power-off"></i>logout</a></li>
-            </ul>
-         </nav>
-         <main class="view_orders">
+  <a class='btn bg-blue text-white' href="profile.html">
+      S&#8455;&#8469;&#8517;<i>IT</i>
+  </a>
+  
+  <nav class="nav">
+    <ul>
+      <li><a class=" welcome btn bg-black text-white" href="profile.html">Welcome User</a></li>
+      <li><a class=" btn bg-white text-black " href="view_orders.html">VIEW ORDERS</a></li>
+      <li><a  class="btn bg-white text-black  pull-right" href="place_order.html">Place Order</a></li>
+
+      <li><a class=" btn bg-white text-black " href="profile.html ">PROFILE</a></li>
+
+      <li><a class=" btn bg-white text-red  pull-right" href="../index.html"><i class="fas fa-power-off"></i> logout</a></li>
+    </ul>
+  </nav> 
+</header>
+<div class="main_wrapper">
+
+  <main class="place_order main">
+
+
             <label class='page_label  btn bg-white text-blue'><u>PARCEL ORDER DETAILS</u></label>
             <section class="location_details">
-               <table>
+               <table class="full_widith">
                   <thead>
                      <tr>
                        <th scope='col'>TRACKING ID</th>
@@ -41,9 +52,9 @@
                   </thead>
                   <tbody>
                      <tr>
-                        <td scope='row' data-aria='ITEM'>SDT124</td>
+                        <td scope='row' data-aria='ITEM'><p>SDT124<p></td>
                         <td scope='row' data-aria='DELIVERY STATUS' class="text-green">DELIVERED</td>
-                        <td scope='row' data-aria='ITEM'>LAPTOP</td>
+                        <td scope='row' data-aria='ITEM'><p>LAPTOP<p></td>
                         <td scope='row' data-aria='PICK UP LOCATION'>WORKER's HOUSE
                         </td>
                         <td scope='row' data-aria='DESTINATION'>ACACIA AVENUE SHOP X8
@@ -53,8 +64,8 @@
                </table>
             </section>
             <section class="receiver_details">
-               <table>
-                  <caption>RECEIVER DETAILS</caption>
+               <table class="full_widith"><br>
+                  <caption>RECEIVER DETAILS</caption><br>
                   <thead>
                      <tr>
                         <th scope="col">FIRST NAME</th>
@@ -72,8 +83,8 @@
                </table>
             </section>
             <section class="parcel_description">
-               <table>
-                  <caption>PARCEL DIMENSIONS</caption>
+               <table class="full_widith"><br>
+                  <caption>PARCEL DIMENSIONS</caption><br>
                   <thead>
                      <tr>
                         <th scope="col">LENGTH</th>
@@ -91,7 +102,7 @@
                      </tr>
                   </tbody>
                </table>
-               <table>
+               <table class="full_widith"><br>
                   <thead>
                      <tr>
                         <th scope="col">PARCEL MONETARY VALUE</th>
@@ -105,13 +116,20 @@
                      <tr>
                         <td data-label='VALUE'>450
                         <td data-label='CURRRENCY'>USD</td>
-                        <th data-label="DELUVERED ON">2018-13-0 @ 12:30 AM</th>
+                        <th data-label="DELiVERED ON">2018-13-0 @ 12:30 AM</th>
                         <td data-label="PICK UP TIME">2018-10-03 @ 09:30 AM</td>
                      </tr>
                   </tbody>
                </table>
             </section>
-         </main>
-      </div>
-   </body>
+      
+   </main>
+</div>
+  <footer class="bg-black">
+    <a class='btn bg-blue text-white' href="profile.html">
+      S&#8455;&#8469;&#8517;<i>IT</i>&nbsp;&nbsp;&copy;2018
+    </a>
+  </footer>
+</div>
+</body>
 </html>

@@ -4,7 +4,9 @@ function AlertUser(msg){
   return alert(msg);
 }
 
-function cancelOrder() {
-    document.getElementById("dry1").style.display = "none";
-    alert(msg+'deleted');
+function cancelOrder(tid) {
+    document.getElementById(tid).innerHTML = "Cancelled";
+    document.getElementById(tid).style = "text-red";
+
+    alert('Order Cancelled');
 }
