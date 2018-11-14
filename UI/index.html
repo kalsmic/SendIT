@@ -20,14 +20,14 @@
         <fieldset>
           <legend>  <h2 class="text-blue">Login Here</h2></legend>
 
-        <form action='user/profile.html'>
+        <form action='user/profile.html' method="POST">
           <input type='text' name='username' placeholder="USERNAME" required
            class='input-control'>
              <input type="password" id="password"  name="password"
           placeholder="PASSWORD" required
            class='input-control'><br><br>
-          <button type="submit" name='btn_login'
-          class='btn bg-blue btn-medium text-white'>Login</button>
+          <input href ='./user/profile.html' type='submit' name='btn_login'
+          class='btn bg-blue btn-medium text-white' value='Login'>
           <hr>
           <p class="text-blue">Already Registered?</p>
           <a href="user/register.html" name='btn_signup'
