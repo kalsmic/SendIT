@@ -1,48 +1,47 @@
-
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   <meta name='viewport' content="width=device-width, initial-scale=1.0">
   <title>PROFILE</title>
-
-  <link href="./static/css/profile.css" type="text/css" rel="Stylesheet">
-  <link href="./static/css/table.css" type="text/css" rel="Stylesheet">
-
+  <link href='../static/css/table.css' type="text/css" rel="Stylesheet">
+  <link href="../static/css/style.css" type="text/css" rel="Stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
+  integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" 
+  crossorigin="anonymous">
 </style>
 
 </head>
 <body>
   <div class="wrapper">
 
-  <header>
+  <header class="header">
 
-    <a class='btn bg-blue text-white' href="profile.html">
+  <a class='btn bg-blue text-white' href="profile.html">
       S&#8455;&#8469;&#8517;<i>IT</i>
   </a>
-  <a class="btn bg-black text-white" href="profile.html">Welcome User</a>
-
-  </header>
-  <nav>
+  
+  <nav class="nav">
     <ul>
+      <li><a class=" welcome btn bg-black text-white" href="profile.html">Welcome User</a></li>
+      <li><a class=" btn bg-white text-black " href="view_orders.html">VIEW ORDERS</a></li>
+      <li><a  class="active btn bg-white text-black  pull-right" href="place_order.html">Place Order</a></li>
 
-      <li><a class=" btn bg-white text-black floating" href="view_orders.html">VIEW ORDERS</a></li>
-      <li><a class="btn bg-white  floating pull-right" href="place_order.html"><u>Place Order</u></a></li>
+      <li><a class=" btn bg-white text-black " href="profile.html ">PROFILE</a></li>
 
-      <li><a class="active btn bg-white text_black floating" href="profile.html ">PROFILE</a></li>
-
-      <li><a class=" btn bg-white text-red floating pull-right" href="index.html"><i class="fa fa-power-off"></i>logout</a></li>
+      <li><a class=" btn bg-white text-red  pull-right" href="../index.html"><i class="fas fa-power-off"></i> logout</a></li>
     </ul>
-  </nav>
+  </nav> 
+</header>
+<div class="main_wrapper">
 
 
 
+  <main class="place_order main">
 
-  <main class="view_orders">
+    <label class='active btn btn-block'>create a parcel Order</label>
 
-    <label class='page_label btn btn-block'>create a parcel Order</label>
-
-       <form enctype="multipart/form-data">
+       <form enctype="multipart/form-data" method="POST" action="view_order.html">
 
          <section class="location_details">
 
@@ -58,15 +57,15 @@
              <tbody>
              <tr>
                <td scope='row' data-label='ITEM'><input type="text" name='item'
-                 class="input-control" placeholder="ITEM NAME">
+                 class="input-control" placeholder="ITEM NAME" required>
                </td>
                <td scope='row' data-label='PICK UP LOCATION'> <input type='text'
                   name='pick_up_location' placeholder="PICK UP LOCATION"
-                  class="input-control">
+                  class="input-control" required>
                </td>
                <td scope='row' data-label='DESTINATION'> <input type='text'
                   name='destination' placeholder="DESTINATION"
-                 class="input-control">
+                 class="input-control" required>
                </td>
              </tr>
            </tbody>
@@ -92,15 +91,15 @@
                <tr>
                  <td scope='row' data-label='FIRST NAME:'><input type='text'
                     name='receiver_first_name' placeholder="LASTNAME"
-                    class="input-control">
+                    class="input-control" required>
                  </td>
                  <td scope='row' data-label='LAST NAME:'> <input type='text'
                     name='receiver_last_name' placeholder="FIRSTNAME"
-                    class="input-control">
+                    class="input-control" required>
                  </td>
                  <td scope='row' data-label='PHONE NUMBER'> <input type='text'
                     name='receiver_phone' placeholder="PHONE NUMBER"
-                     class="input-control">
+                     class="input-control" required>
                  </td>
                </tr>
              </tbody>
@@ -161,7 +160,7 @@
              <tbody>
                <tr>
                    <td data-label='VALUE'> <input type="number" name='item_value'
-                      class="input-control" min='0' placeholder="VALUE">
+                      class="input-control" min='0' placeholder="VALUE" required>
                    <td data-label='CURRRENCY'>
                        <select name='currency' class="btn btn-small">
                            <option value="">select CURRENCY</option>
@@ -172,11 +171,11 @@
                    </td>
                    <td data-label="PICK UP DATE">
                        <input type='date' name="pick_up_date"
-                        class="input-control" value="2018-11-04">
+                        class="input-control" value="2018-11-04" required>
                    </td>
                    <td data-label="PICK UP TIME">
                        <input type='time' name="pick_up_time"
-                       class="input-control" value="09:30">
+                       class="input-control" value="09:30" required>
                    </td>
                </tr>
            </tbody>
@@ -187,14 +186,15 @@
            </thead>
            <tbody>
              <tr>
-                 <td data-aria=""> <input type='submit' name="btn-place_order"
+                 <td data-aria=""> <input type='submit' href='view_orders' name="btn-place_order"
                     class="btn block bg-green text-white floating"
                     value="ADD PARCEL ORDER"> </td>
              </tr>
              </tbody>
            </table>
          </form>
-
+</main>
+</div>
   <footer class="bg-black">
     <a class='btn bg-blue text-white' href="profile.html">
       S&#8455;&#8469;&#8517;<i>IT</i>&nbsp;&nbsp;&copy;2018

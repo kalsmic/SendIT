@@ -95,4 +95,19 @@ margin-bottom: 10px;
 grid-row:2;
 margin-bottom:300px; 
  }
-  
+ .place_order {
+  grid-column:1/span 3;
+  grid-row:2;
+  justify-content: center;
+  margin-bottom:300px; 
+  margin: auto;
+ }
+ .page_label{
+ text-decoration: underline;
+ color:var(--blue);
+ }
+ .active
+ {
+  text-decoration: underline;
+  color:var(--blue);
+  }
