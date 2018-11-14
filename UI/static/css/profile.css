@@ -82,7 +82,7 @@ nav {
   }
 
 }
- @media (min-width: 700px) {
+ /* @media (min-width: 700px) {
 
    .wrapper {
      display: grid;
@@ -136,4 +136,4 @@ nav {
     grid-row:7;
   }
 
-}
+} */
