@@ -1,5 +1,6 @@
 # SendIT
 SendIT is a courier service that helps users deliver parcels to different destinations. SendIT provides courier quotes based on weight categories
+
 ### Prerequisites
 
 A modern web browser preferrably 
@@ -36,8 +37,6 @@ A modern web browser preferrably
 * HTML
 * CSS
 * JAVASCRIPT
-
-
 
 ## Author
 Kalule Arthur
