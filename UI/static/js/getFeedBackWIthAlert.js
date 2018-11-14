@@ -5,6 +5,8 @@ function AlertUser(msg){
 }
 
 function cancelOrder() {
-    document.getElementById("dry1").style.display = "none";
-    alert(msg+'deleted');
+    document.getElementById("dry1").innerHTML = "Cancelled";
+    document.getElementById("dry1").style = "text-lred";
+
+    alert('Order Cancelled');
 }
