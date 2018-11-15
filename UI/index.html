@@ -5,6 +5,9 @@
   <meta name='viewport' content="width=device-width, initial-scale=1.0">
   <title>login | Register </title>
   <link href="static/css/style.css" type="text/css" rel="Stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
+  integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" 
+  crossorigin="anonymous">
 </head>
 <body>
   <div class="wrapper">
@@ -21,18 +24,22 @@
           <legend>  <h2 class="text-blue">Login Here</h2></legend>
 
         <form action='user/profile.html'>
+
           <input type='text' name='username' placeholder="USERNAME" required
            class='input-control'>
              <input type="password" id="password"  name="password"
           placeholder="PASSWORD" required
            class='input-control'><br><br>
+
           <button type='submit' class='btn bg-blue btn-medium text-white'>Login</button>
+
           <hr>
           <p class="text-blue">Already Registered?</p>
-          <a href="user/register.html" name='btn_signup'
+          <a href="./user/register.html" name='btn_signup'
           class='btn bg-blue btn-small text-white'>click Here to Sign Up</a>
-          <a  class='btn bg-lblack btn-medium text-white' href="./admin/index.html">ADMIN LOGIN HERE</a>
 
+          <a href="./admin/index.html" class="text-white bg-lblack btn btn-small">ADMIN LOGIN HERE
+           </a>
         </form>
       </fieldset>
     </section>
